@@ -11594,6 +11594,7 @@ __metadata:
     react-dom: 17.0.2
     react-query: ^3.39.0
     recoil: ^0.7.2
+    stitches: ^1.2.11
     typescript: 4.6.3
   languageName: unknown
   linkType: soft
@@ -13546,6 +13547,13 @@ __metadata:
   version: 2.0.1
   resolution: "statuses@npm:2.0.1"
   checksum: 18c7623fdb8f646fb213ca4051be4df7efb3484d4ab662937ca6fbef7ced9b9e12842709872eb3020cc3504b93bde88935c9f6417489627a7786f24f8031cbcb
+  languageName: node
+  linkType: hard
+
+"stitches@npm:^1.2.11":
+  version: 1.2.11
+  resolution: "stitches@npm:1.2.11"
+  checksum: a5fad0182c3a6b84b859df7b6a2d111f13bc1e8814af37eb05239b826b08052cb25c7ad952d8427ec747dc8e35eea790fe8f9c2533e88f32679239c5a4f31c65
   languageName: node
   linkType: hard
 

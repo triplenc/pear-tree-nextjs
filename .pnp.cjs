@@ -58,6 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:17.0.2"],\
             ["react-query", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:3.39.0"],\
             ["recoil", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:0.7.2"],\
+            ["stitches", "npm:1.2.11"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=f456af"]\
           ],\
           "linkType": "SOFT"\
@@ -15584,6 +15585,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:17.0.2"],\
             ["react-query", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:3.39.0"],\
             ["recoil", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:0.7.2"],\
+            ["stitches", "npm:1.2.11"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=f456af"]\
           ],\
           "linkType": "SOFT"\
@@ -17989,6 +17991,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/statuses-npm-2.0.1-81d2b97fee-18c7623fdb.zip/node_modules/statuses/",\
           "packageDependencies": [\
             ["statuses", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["stitches", [\
+        ["npm:1.2.11", {\
+          "packageLocation": "./.yarn/cache/stitches-npm-1.2.11-036a2e70a4-a5fad0182c.zip/node_modules/stitches/",\
+          "packageDependencies": [\
+            ["stitches", "npm:1.2.11"]\
           ],\
           "linkType": "HARD"\
         }]\
