@@ -11,12 +11,12 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@stitches/react": "^1.2.8",
     "next": "12.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-query": "^3.39.0",
-    "recoil": "^0.7.2",
-    "stitches": "^1.2.11"
+    "recoil": "^0.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",

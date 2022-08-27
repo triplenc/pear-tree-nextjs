@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/core", "npm:7.17.10"],\
             ["@mdx-js/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.6.22"],\
+            ["@stitches/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.2.8"],\
             ["@storybook/addon-actions", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:6.4.22"],\
             ["@storybook/addon-docs", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:6.4.22"],\
             ["@storybook/addon-essentials", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:6.4.22"],\
@@ -58,7 +59,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:17.0.2"],\
             ["react-query", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:3.39.0"],\
             ["recoil", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:0.7.2"],\
-            ["stitches", "npm:1.2.11"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=f456af"]\
           ],\
           "linkType": "SOFT"\
@@ -3592,6 +3592,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@sindresorhus-is-npm-4.6.0-7cad05c55e-83839f13da.zip/node_modules/@sindresorhus/is/",\
           "packageDependencies": [\
             ["@sindresorhus/is", "npm:4.6.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@stitches/react", [\
+        ["npm:1.2.8", {\
+          "packageLocation": "./.yarn/cache/@stitches-react-npm-1.2.8-445a1042b8-029795323c.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "npm:1.2.8"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.2.8", {\
+          "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-074a8179cc/0/cache/@stitches-react-npm-1.2.8-445a1042b8-029795323c.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.2.8"],\
+            ["@types/react", "npm:17.0.45"],\
+            ["react", "npm:17.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -15562,6 +15584,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pear-tree", "workspace:."],\
             ["@babel/core", "npm:7.17.10"],\
             ["@mdx-js/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.6.22"],\
+            ["@stitches/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.2.8"],\
             ["@storybook/addon-actions", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:6.4.22"],\
             ["@storybook/addon-docs", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:6.4.22"],\
             ["@storybook/addon-essentials", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:6.4.22"],\
@@ -15585,7 +15608,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:17.0.2"],\
             ["react-query", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:3.39.0"],\
             ["recoil", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:0.7.2"],\
-            ["stitches", "npm:1.2.11"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=f456af"]\
           ],\
           "linkType": "SOFT"\
@@ -17991,15 +18013,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/statuses-npm-2.0.1-81d2b97fee-18c7623fdb.zip/node_modules/statuses/",\
           "packageDependencies": [\
             ["statuses", "npm:2.0.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["stitches", [\
-        ["npm:1.2.11", {\
-          "packageLocation": "./.yarn/cache/stitches-npm-1.2.11-036a2e70a4-a5fad0182c.zip/node_modules/stitches/",\
-          "packageDependencies": [\
-            ["stitches", "npm:1.2.11"]\
           ],\
           "linkType": "HARD"\
         }]\
