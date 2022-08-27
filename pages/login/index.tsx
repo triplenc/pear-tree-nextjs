@@ -1,5 +1,5 @@
-import type {NextPage} from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
 const Login: NextPage = () => {
   return (
@@ -8,7 +8,7 @@ const Login: NextPage = () => {
         <title>배나무 로그인</title>
       </Head>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

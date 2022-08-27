@@ -1,5 +1,5 @@
-import type {NextPage} from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
 const MyPageGuest: NextPage = () => {
   return (
@@ -8,7 +8,7 @@ const MyPageGuest: NextPage = () => {
         <title>주문 내역</title>
       </Head>
     </div>
-  )
-}
+  );
+};
 
-export default MyPageGuest
+export default MyPageGuest;

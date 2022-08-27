@@ -1,5 +1,5 @@
-import type {NextPage} from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
 const NotificationList: NextPage = () => {
   return (
@@ -8,7 +8,7 @@ const NotificationList: NextPage = () => {
         <title>알림</title>
       </Head>
     </div>
-  )
-}
+  );
+};
 
-export default NotificationList
+export default NotificationList;

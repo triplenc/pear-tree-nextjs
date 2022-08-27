@@ -1,5 +1,5 @@
-import type {NextPage} from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
 const ChatList: NextPage = () => {
   return (
@@ -8,7 +8,7 @@ const ChatList: NextPage = () => {
         <title>채팅방 목록</title>
       </Head>
     </div>
-  )
-}
+  );
+};
 
-export default ChatList
+export default ChatList;

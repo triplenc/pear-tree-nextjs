@@ -1,5 +1,5 @@
-import type {NextPage} from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
 const PartyList: NextPage = () => {
   return (
@@ -8,7 +8,7 @@ const PartyList: NextPage = () => {
         <title>파티 목록</title>
       </Head>
     </div>
-  )
-}
+  );
+};
 
-export default PartyList
+export default PartyList;
