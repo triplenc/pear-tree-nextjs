@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -20,32 +16,15 @@
     "incremental": true,
     "baseUrl": "./",
     "paths": {
-      "@lib/*": [
-        "src/lib/*"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@styles/*": [
-        "src/styles/*"
-      ],
-      "@contexts/*": [
-        "src/contexts/*"
-      ],
-      "@recoil/*": [
-        "src/recoil/*"
-      ],
-      "stitches": [
-        "src/components/stitches.config.ts"
-      ]
+      "@lib/*": ["src/lib/*"],
+      "@components/*": ["src/components/*"],
+      "@styles/*": ["src/styles/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@recoil/*": ["src/recoil/*"],
+      "stitches": ["src/components/stitches.config.ts"],
+      "@icons/*": ["public/icons/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
