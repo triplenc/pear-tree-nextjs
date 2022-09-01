@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Chicken from "@icons/chicken.svg";
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +10,7 @@ const Home: NextPage = () => {
         <meta name="description" content="배달료 쉐어 서비스" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Chicken />
     </div>
   );
 };
