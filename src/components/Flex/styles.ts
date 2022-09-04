@@ -1,12 +1,62 @@
-import styled from "styled-components";
-import { FlexProps } from "./interfaces";
+import { styled } from "../stitches.config";
 
-export const FlexStyle = styled.div<FlexProps>`
-  display: flex;
-  ${({ direction }) => direction && `flex-direction: ${direction};`}
-  ${({ justify }) => justify && `justify-content: ${justify};`}
-  ${({ align }) => align && `align-items: ${align};`}
-  ${({ gap }) => gap && `gap: ${gap}rem;`}
-  ${({ padding }) => padding && `padding: ${padding};`}
-  ${({ margin }) => margin && `margin: ${margin};`}
-`;
+export const Flex = styled("div", {
+  display: "flex",
+  m: "$0",
+  p: "$0",
+  variants: {
+    direction: {
+      row: {
+        flexDirection: "row",
+      },
+      column: {
+        flexDirection: "column",
+      },
+    },
+    justify: {
+      start: {
+        justifyContent: "flex-start",
+      },
+      center: {
+        justifyContent: "center",
+      },
+      end: {
+        justifyContent: "flex-end",
+      },
+      between: {
+        justifyContent: "space-between",
+      },
+      around: {
+        justifyContent: "space-around",
+      },
+    },
+    align: {
+      start: {
+        alignItems: "flex-start",
+      },
+      center: {
+        alignItems: "center",
+      },
+      end: {
+        alignItems: "flex-end",
+      },
+      stretch: {
+        alignItems: "stretch",
+      },
+    },
+    wrap: {
+      noWrap: {
+        flexWrap: "nowrap",
+      },
+      wrap: {
+        flexWrap: "wrap",
+      },
+    },
+  },
+  defaultVariants: {
+    direction: "row",
+    align: "stretch",
+    justify: "start",
+    wrap: "noWrap",
+  },
+});
