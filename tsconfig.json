@@ -22,7 +22,8 @@
       "@contexts/*": ["src/contexts/*"],
       "@recoil/*": ["src/recoil/*"],
       "stitches": ["src/components/stitches.config.ts"],
-      "@icons/*": ["public/icons/*"]
+      "@icons/*": ["public/icons/*"],
+      "@emotion/core": ["src/types/emotion.d.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
