@@ -13,8 +13,7 @@ export function Typography({
       color={color}
       fontSize={fontSize}
       fontWeight={fontWeight}
-      lineHeight={lineHeight}
-    >
+      lineHeight={lineHeight}>
       {children}
     </TypographyStyle>
   );
