@@ -1,14 +1,7 @@
 import { ReactNode } from "react";
+import { colors } from "@components/stitches.config";
 
 export interface TypographyProps {
   children: ReactNode;
-  color?: string;
-  fontSize?: number;
-  fontWeight?: string;
-  lineHeight?: number | string;
+  color?: keyof typeof colors;
 }
-
-export type SettledTypographyProps = Pick<
-  TypographyProps,
-  "children" | "color"
->;
