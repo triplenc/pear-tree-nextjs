@@ -1,40 +1,58 @@
-import styled from "styled-components";
-import { TypographyProps } from "./interfaces";
+import { styled } from "@stitches";
 
-export const TypographyStyle = styled.p<
-  Required<Omit<TypographyProps, "children">>
->`
-  color: ${({ theme, color }) => theme.color[color]};
-  font-size: ${({ fontSize }) => fontSize}rem;
-  font-weight: ${({ fontWeight }) => fontWeight};
-  line-height: ${({ lineHeight }) => lineHeight};
-  margin: 0;
-`;
-
-export const H1Style = styled.h1<{ color: string }>`
-  color: ${({ theme, color }) => theme.color[color]};
-  font-size: ${({ theme }) => theme.font.size.h1};
-  font-weight: ${({ theme }) => theme.font.weight.bold};
-  margin: 0;
-`;
-
-export const H2Style = styled.h2<{ color: string }>`
-  color: ${({ theme, color }) => theme.color[color]};
-  font-size: ${({ theme }) => theme.font.size.h2};
-  font-weight: ${({ theme }) => theme.font.weight.bold};
-  margin: 0;
-`;
-
-export const BodyStyle = styled.p<{ color: string }>`
-  color: ${({ theme, color }) => theme.color[color]};
-  font-size: ${({ theme }) => theme.font.size.body};
-  font-weight: ${({ theme }) => theme.font.weight.normal};
-  margin: 0;
-`;
-
-export const PStyle = styled.p<{ color: string }>`
-  color: ${({ theme, color }) => theme.color[color]};
-  font-size: ${({ theme }) => theme.font.size.p};
-  font-weight: ${({ theme }) => theme.font.weight.normal};
-  margin: 0;
-`;
+export const TypographyStyle = styled("p", {
+  boxSizing: "border-box",
+  m: "0",
+  p: "0",
+  lineHeight: "130%",
+  defaultVariants: {
+    type: "caption",
+    color: "black",
+  },
+  variants: {
+    type: {
+      h1: {
+        fontSize: "$21",
+        fontWeight: "$semiBold",
+      },
+      h2: {
+        fontSize: "$18",
+        fontWeight: "$semiBold",
+      },
+      subtitle1: {
+        fontSize: "$16",
+        fontWeight: "$semiBold",
+      },
+      subtitle2: {
+        fontSize: "$16",
+        fontWeight: "$medium",
+      },
+      body1: {
+        fontSize: "$14",
+        fontWeight: "$regular",
+      },
+      body2: {
+        fontSize: "$13",
+        fontWeight: "$regular",
+      },
+      caption: {
+        fontSize: "$12",
+        fontWeight: "$regular",
+      },
+    },
+    color: {
+      main01: { color: "$main01" },
+      main02: { color: "$main02" },
+      main03: { color: "$main03" },
+      main04: { color: "$main04" },
+      main05: { color: "$main05" },
+      main06: { color: "$main06" },
+      gray01: { color: "$gray01" },
+      gray02: { color: "$gray02" },
+      gray03: { color: "$gray03" },
+      gray04: { color: "$gray04" },
+      black: { color: "$black" },
+      white: { color: "$white" },
+    },
+  },
+});

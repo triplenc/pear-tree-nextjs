@@ -1,44 +1,58 @@
-import { SettledTypographyProps, TypographyProps } from "./interfaces";
-import { BodyStyle, H1Style, H2Style, PStyle, TypographyStyle } from "./styles";
+import { TypographyProps } from "./interfaces";
+import { TypographyStyle } from "./styles";
 
-export function Typography({
-  children,
-  color = "#000000",
-  fontSize = 1.4,
-  fontWeight = "400",
-  lineHeight = "1.25",
-}: TypographyProps) {
+export function H1({ children, color }: TypographyProps) {
   return (
-    <TypographyStyle
-      color={color}
-      fontSize={fontSize}
-      fontWeight={fontWeight}
-      lineHeight={lineHeight}>
+    <TypographyStyle type="h1" color={color}>
       {children}
     </TypographyStyle>
   );
 }
 
-export function H1({ children, color = "black" }: SettledTypographyProps) {
-  return <H1Style color={color}>{children}</H1Style>;
-}
-
-export function H2({ children, color = "black" }: SettledTypographyProps) {
-  return <H2Style color={color}>{children}</H2Style>;
-}
-
-export function Body1({ children, color = "black" }: SettledTypographyProps) {
+export function H2({ children, color }: TypographyProps) {
   return (
-    <BodyStyle color={color}>
-      <strong>{children}</strong>
-    </BodyStyle>
+    <TypographyStyle type="h2" color={color}>
+      {children}
+    </TypographyStyle>
   );
 }
 
-export function Body2({ children, color = "black" }: SettledTypographyProps) {
-  return <BodyStyle color={color}>{children}</BodyStyle>;
+export function Subtitle1({ children, color }: TypographyProps) {
+  return (
+    <TypographyStyle type="subtitle1" color={color}>
+      {children}
+    </TypographyStyle>
+  );
 }
 
-export function P({ children, color = "black" }: SettledTypographyProps) {
-  return <PStyle color={color}>{children}</PStyle>;
+export function Subtitle2({ children, color }: TypographyProps) {
+  return (
+    <TypographyStyle type="subtitle2" color={color}>
+      {children}
+    </TypographyStyle>
+  );
+}
+
+export function Body1({ children, color }: TypographyProps) {
+  return (
+    <TypographyStyle type="body1" color={color}>
+      {children}
+    </TypographyStyle>
+  );
+}
+
+export function Body2({ children, color }: TypographyProps) {
+  return (
+    <TypographyStyle type="body2" color={color}>
+      {children}
+    </TypographyStyle>
+  );
+}
+
+export function Caption({ children, color }: TypographyProps) {
+  return (
+    <TypographyStyle type="caption" color={color}>
+      {children}
+    </TypographyStyle>
+  );
 }

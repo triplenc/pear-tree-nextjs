@@ -1,9 +1,9 @@
-import { styled } from "../stitches.config";
+import { styled } from "@stitches";
 
 export const Flex = styled("div", {
   display: "flex",
-  m: "$0",
-  p: "$0",
+  m: "0",
+  p: "0",
   variants: {
     direction: {
       row: {

@@ -21,7 +21,7 @@
       "@styles/*": ["src/styles/*"],
       "@contexts/*": ["src/contexts/*"],
       "@recoil/*": ["src/recoil/*"],
-      "stitches": ["src/components/stitches.config.ts"],
+      "@stitches": ["src/components/stitches.config.ts"],
       "@icons/*": ["public/icons/*"],
       "@emotion/core": ["src/types/emotion.d.ts"]
     }
