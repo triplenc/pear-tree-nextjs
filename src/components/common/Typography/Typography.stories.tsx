@@ -1,10 +1,9 @@
-import { Flex } from "@components/Flex";
+import { Flex } from "@components/common/Flex";
 import { colors } from "@components/stitches.config";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 import { TypographyStyle } from "./styles";
 import { Body1, Body2, Caption, H1, H2, Subtitle1, Subtitle2 } from ".";
-
 
 export default {
   title: "Common/Typography",
@@ -42,4 +41,4 @@ const Template: ComponentStory<typeof TypographyStyle> = (args) => (
   </Flex>
 );
 
-export const Typos = Template.bind({});
+export const typography = Template.bind({});

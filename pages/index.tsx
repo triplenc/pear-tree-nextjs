@@ -1,17 +1,19 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 
+import { Button } from "@components/common";
+import { colors } from "@components/stitches.config";
 import Chicken from "@icons/chicken.svg";
+import Star from "@icons/star.svg";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>배나무</title>
-        <meta name="description" content="배달료 쉐어 서비스" />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
-      <Chicken />
+      <button onClick={() => console.info(1234)}>
+        <Button>
+          <Chicken />
+        </Button>
+        <Star fill={colors.main01} />
+      </button>
     </div>
   );
 };
