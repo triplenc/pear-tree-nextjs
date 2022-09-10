@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Box } from "@components/common";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
+
+import { Box } from ".";
 
 export default {
   title: "Common/Box",
