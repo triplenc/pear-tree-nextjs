@@ -1,5 +1,6 @@
 import { styled } from "@stitches";
 
+/** semantic을 위해 가급적 사용을 지양해주세요.*/
 export const TypographyStyle = styled("p", {
   boxSizing: "border-box",
   m: "0",
