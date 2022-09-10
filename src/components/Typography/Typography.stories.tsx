@@ -1,8 +1,10 @@
 import { Flex } from "@components/Flex";
 import { colors } from "@components/stitches.config";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Body1, Body2, Caption, H1, H2, Subtitle1, Subtitle2 } from ".";
+
 import { TypographyStyle } from "./styles";
+import { Body1, Body2, Caption, H1, H2, Subtitle1, Subtitle2 } from ".";
+
 
 export default {
   title: "Common/Typography",
