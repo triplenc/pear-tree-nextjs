@@ -65,6 +65,8 @@ export const {
     fontSizes,
     fontWeights,
     space,
+    sizes: space,
+    radii: space,
   },
   utils: {
     m: (value: PropertyValue<"margin">) => ({
