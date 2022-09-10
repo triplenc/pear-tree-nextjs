@@ -1,5 +1,3 @@
-import React from "react";
-
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 import { Image } from ".";
@@ -11,8 +9,8 @@ export default {
 
 const Template: ComponentStory<typeof Image> = (args) => <Image {...args} />;
 
-export const Row = Template.bind({});
-Row.args = {
+export const image = Template.bind({});
+image.args = {
   alt: "default",
   src: "https://t1.daumcdn.net/cfile/tistory/1653FD374EF0D4C412?download",
 };

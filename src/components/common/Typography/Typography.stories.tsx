@@ -41,4 +41,4 @@ const Template: ComponentStory<typeof TypographyStyle> = (args) => (
   </Flex>
 );
 
-export const Typos = Template.bind({});
+export const typography = Template.bind({});
