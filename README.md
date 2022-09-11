@@ -41,4 +41,3 @@ yarn dev
 * *ci*: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
 * *chore*: Other changes that don't modify src or test files
 * *revert*: Reverts a previous commit
-* [rule docs](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)

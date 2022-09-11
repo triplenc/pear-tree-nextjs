@@ -3,26 +3,26 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { Button } from ".";
 
 export default {
-  title: "Common/Button",
-  component: Button,
   argTypes: {
-    type: {
-      options: ["primary", "gray", "outlinePrimary", "outlineGray"],
-      control: { type: "select" },
-    },
-    size: {
-      options: ["large", "medium", "small"],
+    disabled: {
       control: { type: "radio" },
+      options: [true, false],
     },
     height: {
+      control: { type: "radio" },
       options: ["tall", "normal"],
-      control: { type: "radio" },
     },
-    disabled: {
-      options: [true, false],
+    size: {
       control: { type: "radio" },
+      options: ["large", "medium", "small"],
+    },
+    type: {
+      control: { type: "select" },
+      options: ["primary", "gray", "outlinePrimary", "outlineGray"],
     },
   },
+  component: Button,
+  title: "Common/Button",
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => (

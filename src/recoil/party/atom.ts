@@ -1,22 +1,22 @@
 import { atom } from "recoil";
 
 export const partyAtom = atom({
-  key: "partyAtom",
   default: [
     {
-      name: "party1",
       active: true,
+      name: "party1",
       priority: 1,
     },
   ],
+  key: "partyAtom",
 });
 
 export const partyFilterStateAtom = atom({
-  key: "partyFilterStateAtom",
   default: "all",
+  key: "partyFilterStateAtom",
 });
 
 export const partyPriorityStateAtom = atom({
-  key: "partyPriorityStateAtom",
   default: "DESC",
+  key: "partyPriorityStateAtom",
 });

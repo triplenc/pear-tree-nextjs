@@ -1,10 +1,10 @@
 import { ImageProps } from "./interfaces";
 import { ImageContainer, ImageStyle } from "./styles";
 
-export function Image({ src, alt }: ImageProps) {
+export function Image({ alt, src }: ImageProps) {
   return (
     <ImageContainer>
-      <ImageStyle src={src} alt={alt} loading="lazy" />
+      <ImageStyle alt={alt} loading="lazy" src={src} />
     </ImageContainer>
   );
 }

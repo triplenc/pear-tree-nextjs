@@ -2,16 +2,16 @@ import { Head, Html, Main, NextScript } from "next/document";
 
 import { getCssText } from "@components/stitches.config";
 
-export default function Document() {
+export const Document = () => {
   return (
     <Html lang="ko">
       <Head>
-        <meta name="description" content="배달료 쉐어 서비스" />
+        <meta content="배달료 쉐어 서비스" name="description" />
         <meta charSet="UTF-8" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link href="/favicon.png" rel="icon" type="image/png" />
         <style
-          id="stitches"
           dangerouslySetInnerHTML={{ __html: getCssText() }}
+          id="stitches"
         />
       </Head>
       <body>
@@ -20,4 +20,6 @@ export default function Document() {
       </body>
     </Html>
   );
-}
+};
+
+export default Document;

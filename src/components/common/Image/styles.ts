@@ -1,16 +1,16 @@
 import { styled } from "@stitches";
 
 export const ImageStyle = styled("img", {
-  width: "auto",
   height: "100%",
-  position: "absolute",
   inset: 0,
+  position: "absolute",
+  width: "auto",
 });
 
 export const ImageContainer = styled("div", {
-  width: "100%",
+  backgroundColor: "$gray02",
+  overflow: "hidden",
   paddingTop: "100%",
   position: "relative",
-  overflow: "hidden",
-  backgroundColor: "$gray02",
+  width: "100%",
 });

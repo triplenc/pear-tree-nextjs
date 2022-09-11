@@ -33,3 +33,11 @@ li {
   list-style: none;
   padding: 0;
 }
+
+input {
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}

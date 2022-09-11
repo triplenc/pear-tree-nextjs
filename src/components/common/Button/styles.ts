@@ -1,14 +1,18 @@
 import { styled } from "@stitches";
 
-export const Button = styled("button", {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  p: "$10",
-  borderRadius: "$10",
-  borderWidth: "0.1rem",
-  borderStyle: "solid",
+const buttonVariants = {
+  defaultVariants: {
+    height: "normal",
+    size: "large",
+    type: "primary",
+  },
   variants: {
+    height: {
+      normal: {},
+      tall: {
+        p: "$16",
+      },
+    },
     size: {
       large: {
         fontSize: "$16",
@@ -23,70 +27,70 @@ export const Button = styled("button", {
         minWidth: "fit-content",
       },
     },
-    height: {
-      tall: {
-        p: "$16",
-      },
-      normal: {},
-    },
     type: {
+      gray: {
+        "&:active": {
+          backgroundColor: "$gray02",
+          borderColor: "$gray02",
+        },
+        "&:disabled": {
+          backgroundColor: "$gray02",
+          borderColor: "$gray02",
+        },
+        backgroundColor: "$gray01",
+        borderColor: "$gray01",
+        color: "$white",
+      },
       outlineGray: {
+        "&:active": {
+          borderColor: "$gray02",
+          color: "$gray02",
+        },
+        "&:disabled": {
+          borderColor: "$gray02",
+          color: "$gray02",
+        },
         backgroundColor: "$white",
         borderColor: "$gray01",
         color: "$gray01",
-        "&:active": {
-          borderColor: "$gray02",
-          color: "$gray02",
-        },
-        "&:disabled": {
-          borderColor: "$gray02",
-          color: "$gray02",
-        },
       },
       outlinePrimary: {
+        "&:active": {
+          borderColor: "$main02",
+          color: "$main02",
+        },
+        "&:disabled": {
+          borderColor: "$main02",
+          color: "$main02",
+        },
         backgroundColor: "$white",
         borderColor: "$main01",
         color: "$main01",
-        "&:active": {
-          borderColor: "$main02",
-          color: "$main02",
-        },
-        "&:disabled": {
-          borderColor: "$main02",
-          color: "$main02",
-        },
       },
       primary: {
-        color: "$white",
+        "&:active": {
+          backgroundColor: "$main02",
+          borderColor: "$main02",
+        },
+        "&:disabled": {
+          backgroundColor: "$main02",
+          borderColor: "$main02",
+        },
         backgroundColor: "$main01",
         borderColor: "$main01",
-        "&:active": {
-          backgroundColor: "$main02",
-          borderColor: "$main02",
-        },
-        "&:disabled": {
-          backgroundColor: "$main02",
-          borderColor: "$main02",
-        },
-      },
-      gray: {
         color: "$white",
-        backgroundColor: "$gray01",
-        borderColor: "$gray01",
-        "&:active": {
-          backgroundColor: "$gray02",
-          borderColor: "$gray02",
-        },
-        "&:disabled": {
-          backgroundColor: "$gray02",
-          borderColor: "$gray02",
-        },
       },
     },
   },
-  defaultVariants: {
-    type: "primary",
-    size: "large",
-    height: "normal",
-  },
+};
+
+export const Button = styled("button", {
+  alignItems: "center",
+  borderRadius: "$10",
+  borderStyle: "solid",
+  borderWidth: "0.1rem",
+  display: "flex",
+  justifyContent: "center",
+  p: "$10",
+  ...buttonVariants,
 });

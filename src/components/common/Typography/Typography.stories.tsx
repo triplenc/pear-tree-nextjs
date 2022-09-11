@@ -6,10 +6,13 @@ import { TypographyStyle } from "./styles";
 import { Body1, Body2, Caption, H1, H2, Subtitle1, Subtitle2 } from ".";
 
 export default {
-  title: "Common/Typography",
-  component: TypographyStyle,
   argTypes: {
+    color: {
+      control: { type: "select" },
+      options: Object.keys(colors),
+    },
     type: {
+      control: { type: "select" },
       options: [
         "h1",
         "h2",
@@ -19,13 +22,10 @@ export default {
         "body2",
         "caption",
       ],
-      control: { type: "select" },
-    },
-    color: {
-      options: Object.keys(colors),
-      control: { type: "select" },
     },
   },
+  component: TypographyStyle,
+  title: "Common/Typography",
 } as ComponentMeta<typeof TypographyStyle>;
 
 const Template: ComponentStory<typeof TypographyStyle> = (args) => (

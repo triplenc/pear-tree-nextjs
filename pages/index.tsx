@@ -8,12 +8,10 @@ import Star from "@icons/star.svg";
 const Home: NextPage = () => {
   return (
     <div>
-      <button onClick={() => console.info(1234)}>
-        <Button>
-          <Chicken />
-        </Button>
-        <Star fill={colors.main01} />
-      </button>
+      <Button>
+        <Chicken />
+      </Button>
+      <Star fill={colors.main01} />
     </div>
   );
 };
