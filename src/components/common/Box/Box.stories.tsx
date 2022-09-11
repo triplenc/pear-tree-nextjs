@@ -15,8 +15,8 @@ export default {
 
 const Template: ComponentStory<typeof Box> = (args) => <Box {...args} />;
 
-export const Row = Template.bind({});
-Row.args = {
+export const box = Template.bind({});
+box.args = {
   children: (
     <>
       <li>first</li>
