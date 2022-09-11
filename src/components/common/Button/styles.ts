@@ -1,18 +1,11 @@
 import { styled } from "@stitches";
 
-export const Button = styled("button", {
-  alignItems: "center",
-  borderRadius: "$10",
-  borderStyle: "solid",
-  borderWidth: "0.1rem",
+const buttonVariants = {
   defaultVariants: {
     height: "normal",
     size: "large",
     type: "primary",
   },
-  display: "flex",
-  justifyContent: "center",
-  p: "$10",
   variants: {
     height: {
       normal: {},
@@ -89,4 +82,15 @@ export const Button = styled("button", {
       },
     },
   },
+};
+
+export const Button = styled("button", {
+  alignItems: "center",
+  borderRadius: "$10",
+  borderStyle: "solid",
+  borderWidth: "0.1rem",
+  display: "flex",
+  justifyContent: "center",
+  p: "$10",
+  ...buttonVariants,
 });

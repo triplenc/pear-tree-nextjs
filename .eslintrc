@@ -75,9 +75,14 @@
     "sort-keys": [
       "error",
       "asc",
-      { "caseSensitive": true, "natural": false, "minKeys": 2 }
+      {
+        "caseSensitive": true,
+        "natural": false,
+        "minKeys": 2,
+        "allowLineSeparatedGroups": true
+      }
     ],
-    "sort-keys-fix/sort-keys-fix": "warn",
+    "sort-keys-fix/sort-keys-fix": "error",
     "sort-destructure-keys/sort-destructure-keys": 2,
     "consistent-return": 0
   },

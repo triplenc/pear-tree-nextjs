@@ -1,15 +1,12 @@
 import { styled } from "@stitches";
 
-export const Flex = styled("div", {
+const flexVariants = {
   defaultVariants: {
     align: "stretch",
     direction: "row",
     justify: "start",
     wrap: "noWrap",
   },
-  display: "flex",
-  m: "0",
-  p: "0",
   variants: {
     align: {
       center: {
@@ -59,4 +56,11 @@ export const Flex = styled("div", {
       },
     },
   },
+};
+
+export const Flex = styled("div", {
+  display: "flex",
+  m: "0",
+  p: "0",
+  ...flexVariants,
 });

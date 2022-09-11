@@ -1,24 +1,11 @@
 import { styled } from "@stitches";
 
-export const Input = styled("input", {
-  "&:focus": {
-    borderColor: "$main01",
-    outline: 0,
-  },
-  "&:placeholder": {
-    color: "$gray01",
-  },
-  borderRadius: "$10",
-  borderStyle: "solid",
-  borderWidth: "0.08rem",
+const inputVariants = {
   defaultVariants: {
     color: "gray",
     fatBorder: false,
     type: "full",
   },
-  fontSize: "$14",
-  m: 0,
-  p: "$15 $18",
   variants: {
     color: {
       error: {
@@ -50,4 +37,26 @@ export const Input = styled("input", {
       },
     },
   },
+};
+
+/**
+ * @fatBorder {boolean} border-width: 0.2rem;
+ * @color {string} border-color: error | gray | primary;
+ * @type {string} width: fit | full | half;
+ */
+export const Input = styled("input", {
+  "&:focus": {
+    borderColor: "$main01",
+    outline: 0,
+  },
+  "&:placeholder": {
+    color: "$gray01",
+  },
+  borderRadius: "$10",
+  borderStyle: "solid",
+  borderWidth: "0.08rem",
+  fontSize: "$14",
+  m: 0,
+  p: "$15 $18",
+  ...inputVariants,
 });
