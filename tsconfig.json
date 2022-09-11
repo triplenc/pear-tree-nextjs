@@ -16,9 +16,12 @@
     "incremental": true,
     "baseUrl": "./",
     "paths": {
+      "@apis/*": ["src/service/apis/*"],
+      "@queries/*": ["src/queries/queries/*"],
       "@lib/*": ["src/lib/*"],
       "@components/*": ["src/components/*"],
       "@styles/*": ["src/styles/*"],
+      "@types": ["src/types"],
       "@contexts/*": ["src/contexts/*"],
       "@recoil/*": ["src/recoil/*"],
       "@stitches": ["src/components/stitches.config.ts"],
