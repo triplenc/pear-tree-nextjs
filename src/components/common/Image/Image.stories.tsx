@@ -3,8 +3,8 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { Image } from ".";
 
 export default {
-  title: "Common/Image",
   component: Image,
+  title: "Common/Image",
 } as ComponentMeta<typeof Image>;
 
 const Template: ComponentStory<typeof Image> = (args) => <Image {...args} />;

@@ -1,3 +1,6 @@
+/* eslint-disable sort-destructure-keys/sort-destructure-keys */
+/* eslint-disable sort-keys-fix/sort-keys-fix */
+/* eslint-disable sort-keys */
 import { createStitches, PropertyValue } from "@stitches/react";
 
 export const colors = {

@@ -1,21 +1,44 @@
 import { styled } from "@stitches";
 
 export const Flex = styled("div", {
+  defaultVariants: {
+    align: "stretch",
+    direction: "row",
+    justify: "start",
+    wrap: "noWrap",
+  },
   display: "flex",
   m: "0",
   p: "0",
   variants: {
-    direction: {
-      row: {
-        flexDirection: "row",
+    align: {
+      center: {
+        alignItems: "center",
       },
+      end: {
+        alignItems: "flex-end",
+      },
+      start: {
+        alignItems: "flex-start",
+      },
+      stretch: {
+        alignItems: "stretch",
+      },
+    },
+    direction: {
       column: {
         flexDirection: "column",
       },
+      row: {
+        flexDirection: "row",
+      },
     },
     justify: {
-      start: {
-        justifyContent: "flex-start",
+      around: {
+        justifyContent: "space-around",
+      },
+      between: {
+        justifyContent: "space-between",
       },
       center: {
         justifyContent: "center",
@@ -23,25 +46,8 @@ export const Flex = styled("div", {
       end: {
         justifyContent: "flex-end",
       },
-      between: {
-        justifyContent: "space-between",
-      },
-      around: {
-        justifyContent: "space-around",
-      },
-    },
-    align: {
       start: {
-        alignItems: "flex-start",
-      },
-      center: {
-        alignItems: "center",
-      },
-      end: {
-        alignItems: "flex-end",
-      },
-      stretch: {
-        alignItems: "stretch",
+        justifyContent: "flex-start",
       },
     },
     wrap: {
@@ -52,11 +58,5 @@ export const Flex = styled("div", {
         flexWrap: "wrap",
       },
     },
-  },
-  defaultVariants: {
-    direction: "row",
-    align: "stretch",
-    justify: "start",
-    wrap: "noWrap",
   },
 });

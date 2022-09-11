@@ -1,42 +1,36 @@
 import { styled } from "@stitches";
 
 export const Input = styled("input", {
-  m: 0,
-  p: "$15 $18",
-  borderWidth: "0.08rem",
-  borderStyle: "solid",
-  borderRadius: "$10",
   "&:focus": {
-    outline: 0,
     borderColor: "$main01",
+    outline: 0,
   },
   "&:placeholder": {
     color: "$gray01",
   },
+  borderRadius: "$10",
+  borderStyle: "solid",
+  borderWidth: "0.08rem",
+  defaultVariants: {
+    color: "gray",
+    fatBorder: false,
+    type: "full",
+  },
   fontSize: "$14",
+  m: 0,
+  p: "$15 $18",
   variants: {
-    type: {
-      full: {
-        width: "100%",
-      },
-      half: {
-        width: "50%",
-      },
-      fit: {
-        width: "fit-content",
-      },
-    },
     color: {
-      gray: {
-        transition: "all 0.3s linear",
-        borderColor: "$gray01",
-      },
       error: {
         borderColor: "$error !important",
       },
-      primary: {
+      gray: {
+        borderColor: "$gray01",
         transition: "all 0.3s linear",
+      },
+      primary: {
         borderColor: "$main01",
+        transition: "all 0.3s linear",
       },
     },
     fatBorder: {
@@ -44,10 +38,16 @@ export const Input = styled("input", {
         borderWidth: "0.2rem",
       },
     },
-  },
-  defaultVariants: {
-    type: "full",
-    color: "gray",
-    fatBorder: false,
+    type: {
+      fit: {
+        width: "fit-content",
+      },
+      full: {
+        width: "100%",
+      },
+      half: {
+        width: "50%",
+      },
+    },
   },
 });

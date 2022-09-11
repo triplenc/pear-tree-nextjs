@@ -8,6 +8,7 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "plugin:typescript-sort-keys/recommended",
     "next",
     "prettier"
   ],
@@ -16,30 +17,51 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "simple-import-sort"],
+  "plugins": [
+    "@typescript-eslint",
+    "simple-import-sort",
+    "sort-keys-fix",
+    "sort-destructure-keys"
+  ],
   "rules": {
-    "linebreak-style": 0,
     "import/prefer-default-export": 0,
     "import/extensions": 0,
-    "no-use-before-define": 0,
-    "import/no-unresolved": 0,
-    "no-alert": 0,
     "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "linebreak-style": 0,
+    "no-use-before-define": 0,
+    "no-alert": 0,
     "no-shadow": 0,
+    "no-console": [2, { "allow": ["error", "info"] }],
+    "no-restricted-exports": 0,
+    "no-restricted-syntax": 0,
+    "no-unused-expressions": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/no-explicit-any": 0,
     "react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx"] }],
+    "react/jsx-props-no-spreading": 0,
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": 0,
+    "react/prop-types": 0,
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "multiline": "last",
+        "ignoreCase": false,
+        "noSortAlphabetically": false,
+        "reservedFirst": ["key"],
+        "locale": "auto"
+      }
+    ],
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "jsx-a11y/no-static-element-interactions": 0,
     "jsx-a11y/click-events-have-key-events": 0,
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
-    "@typescript-eslint/no-var-requires": 0,
-    "@typescript-eslint/no-non-null-assertion": 0,
-    "no-restricted-exports": 0,
-    "react/jsx-props-no-spreading": 0,
-    "@typescript-eslint/no-explicit-any": 0,
-    "react/react-in-jsx-scope": "off",
-    "no-console": [2, { "allow": ["error", "info"] }],
-    "react/require-default-props": 0,
     // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/label-has-associated-control.md#case-my-label-and-input-components-are-custom-components
     "jsx-a11y/label-has-associated-control": [
       2,
@@ -50,10 +72,14 @@
         "depth": 3
       }
     ],
-    "consistent-return": 0,
-    "react/prop-types": 0,
-    "no-restricted-syntax": 0,
-    "no-unused-expressions": 0
+    "sort-keys": [
+      "error",
+      "asc",
+      { "caseSensitive": true, "natural": false, "minKeys": 2 }
+    ],
+    "sort-keys-fix/sort-keys-fix": "warn",
+    "sort-destructure-keys/sort-destructure-keys": 2,
+    "consistent-return": 0
   },
   "overrides": [
     {
