@@ -1,6 +1,6 @@
 import { Flex } from "@components/common/Flex";
-import { colors } from "@components/stitches.config";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { colors } from "@styles";
 
 import { TypographyStyle } from "./styles";
 import { Body1, Body2, Caption, H1, H2, Subtitle1, Subtitle2 } from ".";

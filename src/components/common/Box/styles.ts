@@ -1,4 +1,4 @@
-import { styled } from "@stitches";
+import { styled } from "@styles";
 
 /**
  * margin, padding 값과 semantic tag 처리에 사용.

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import { colors } from "@components/stitches.config";
+import { colors } from "@styles";
 
 export interface TypographyProps {
   children: ReactNode;

@@ -1,4 +1,4 @@
-import { styled } from "@stitches";
+import { styled } from "@styles";
 
 const flexVariants = {
   defaultVariants: {
