@@ -22,6 +22,7 @@
       "@lib/*": ["src/lib/*"],
       "@components/*": ["src/components/*"],
       "@styles": ["src/styles"],
+      "@styles/*": ["src/styles/*"],
       "@types": ["src/types"],
       "@contexts/*": ["src/contexts/*"],
       "@recoil/*": ["src/recoil/*"],

@@ -1,5 +1,5 @@
 import { Box } from "@components/common";
-import { styled } from "@styles";
+import { FlexColumnCenterCenter, styled } from "@styles";
 
 export const SplashContainer = styled(Box, {
   backgroundColor: "$main01",
@@ -15,6 +15,7 @@ export const SplashContainer = styled(Box, {
 
 export const SplashImageContainer = styled(Box, {
   bottom: 0,
+  height: "60vh",
   maxHeight: "60%",
   maxWidth: "100%",
   position: "absolute",
@@ -22,8 +23,10 @@ export const SplashImageContainer = styled(Box, {
 });
 
 export const TitleImageContainer = styled(Box, {
+  gap: "$14",
   left: "50%",
   position: "absolute",
   top: "30%",
   transform: "translateX(-50%)",
+  ...FlexColumnCenterCenter,
 });
