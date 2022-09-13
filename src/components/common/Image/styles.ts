@@ -1,4 +1,4 @@
-import { styled } from "@stitches";
+import { styled } from "@styles";
 
 export const ImageStyle = styled("img", {
   height: "100%",
@@ -8,7 +8,6 @@ export const ImageStyle = styled("img", {
 });
 
 export const ImageContainer = styled("div", {
-  backgroundColor: "$gray02",
   overflow: "hidden",
   paddingTop: "100%",
   position: "relative",

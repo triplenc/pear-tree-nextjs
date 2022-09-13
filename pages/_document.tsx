@@ -1,6 +1,6 @@
 import { Head, Html, Main, NextScript } from "next/document";
 
-import { getCssText } from "@components/stitches.config";
+import { getCssText } from "@styles";
 
 export const Document = () => {
   return (
