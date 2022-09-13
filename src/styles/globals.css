@@ -40,4 +40,9 @@ input {
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
+  user-select: none;
+}
+
+textarea {
+  user-select: none;
 }
