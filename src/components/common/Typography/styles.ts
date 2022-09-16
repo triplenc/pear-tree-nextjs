@@ -1,6 +1,6 @@
 import { styled } from "@styles";
 
-const typographyVariants = {
+const typographyVariants = styled("p", {
   defaultVariants: {
     color: "black",
     type: "caption",
@@ -52,13 +52,12 @@ const typographyVariants = {
       },
     },
   },
-};
+});
 
 /** semantic을 위해 가급적 사용을 지양해주세요.*/
-export const TypographyStyle = styled("p", {
+export const TypographyStyle = styled(typographyVariants, {
   boxSizing: "border-box",
   lineHeight: "130%",
   m: "0",
   p: "0",
-  ...typographyVariants,
 });

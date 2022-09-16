@@ -3684,6 +3684,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@reastorage/core@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@reastorage/core@npm:1.0.3"
+  dependencies:
+    lz-string: ^1.4.4
+  checksum: 4785a49156fcafe98a75a09c90edc8910604e1f9c5d64cabbfb313dce0bbac7514a20aa46299ef3147bae7f2646e883f1fb340970cba5b42db86b186c7dfd7f2
+  languageName: node
+  linkType: hard
+
+"@reastorage/react@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@reastorage/react@npm:1.0.3"
+  dependencies:
+    "@reastorage/core": ^1.0.3
+    use-sync-external-store: ^1.2.0
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: fb60098dcbce15cf440fada3332f356c7f4c3ebd7cd8c57992de9f0470be0c1535f32c58e1cfd9bbcc2db9fe2647c4f5ee8078688246306a7c214b4d2fc64a2a
+  languageName: node
+  linkType: hard
+
 "@rushstack/eslint-patch@npm:1.0.8":
   version: 1.0.8
   resolution: "@rushstack/eslint-patch@npm:1.0.8"
@@ -8847,6 +8868,13 @@ __metadata:
   version: 7.0.0
   resolution: "dargs@npm:7.0.0"
   checksum: b8f1e3cba59c42e1f13a114ad4848c3fc1cf7470f633ee9e9f1043762429bc97d91ae31b826fb135eefde203a3fdb20deb0c0a0222ac29d937b8046085d668d1
+  languageName: node
+  linkType: hard
+
+"dayjs@npm:^1.11.5":
+  version: 1.11.5
+  resolution: "dayjs@npm:1.11.5"
+  checksum: e3bbaa7b4883b31be4bf75a181f1447fbb19800c29b332852125aab96baeff3ac232dcba8b88c4ea17d3b636c99dac5fb9d1af4bb6ae26615698bbc4a852dffb
   languageName: node
   linkType: hard
 
@@ -14560,6 +14588,7 @@ __metadata:
     "@commitlint/cli": ^17.1.2
     "@commitlint/config-conventional": ^17.1.0
     "@mdx-js/react": ^1.6.22
+    "@reastorage/react": ^1.0.3
     "@stitches/react": ^1.2.8
     "@storybook/addon-actions": ^6.4.22
     "@storybook/addon-docs": ^6.4.22
@@ -14580,6 +14609,7 @@ __metadata:
     axios: ^0.27.2
     babel-loader: ^8.2.5
     core-js: ^3.25.0
+    dayjs: ^1.11.5
     eslint: 8.23.0
     eslint-config-next: 12.1.1
     eslint-config-prettier: ^8.5.0

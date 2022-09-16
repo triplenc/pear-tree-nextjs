@@ -10,5 +10,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "cSpell.words": ["tanstack"]
+  "cSpell.words": ["reastorage", "tanstack"]
 }

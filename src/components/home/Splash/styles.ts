@@ -1,7 +1,23 @@
 import { Box } from "@components/common";
-import { FlexColumnCenterCenter, styled } from "@styles";
+import { fadeOut, flexColumnCreator, styled } from "@styles";
 
-export const SplashContainer = styled(Box, {
+export const fadeOutPlayTime = 300;
+
+const SplashContainerVariants = styled(Box, {
+  defaultVariants: {
+    animation: "none",
+  },
+  variants: {
+    animation: {
+      fadeOut: {
+        animation: `${fadeOut} ${fadeOutPlayTime}ms ease-out`,
+      },
+      none: {},
+    },
+  },
+});
+
+export const SplashContainer = styled(SplashContainerVariants, {
   backgroundColor: "$main01",
   display: "flex",
   flexDirection: "column",
@@ -11,6 +27,7 @@ export const SplashContainer = styled(Box, {
   position: "absolute",
   top: 0,
   width: "100%",
+  zIndex: 9999,
 });
 
 export const SplashImageContainer = styled(Box, {
@@ -23,10 +40,10 @@ export const SplashImageContainer = styled(Box, {
 });
 
 export const TitleImageContainer = styled(Box, {
+  ...flexColumnCreator("center", "center"),
   gap: "$14",
   left: "50%",
   position: "absolute",
   top: "30%",
   transform: "translateX(-50%)",
-  ...FlexColumnCenterCenter,
 });

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook",
     "postinstall": "husky install"
   },
@@ -15,10 +15,12 @@
     "*.{ts,tsx,js,jsx}": "eslint --fix"
   },
   "dependencies": {
+    "@reastorage/react": "^1.0.3",
     "@stitches/react": "^1.2.8",
     "@svgr/webpack": "^6.3.1",
     "@tanstack/react-query": "^4.3.1",
     "axios": "^0.27.2",
+    "dayjs": "^1.11.5",
     "next": "12.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
