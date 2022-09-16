@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 
 import dayjs from "dayjs";
-import { reastorage, useReastorage } from "reastorage";
+
+import { reastorage, useReastorage } from "@reastorage/react";
 
 import { fadeOutPlayTime } from "../styles";
 
