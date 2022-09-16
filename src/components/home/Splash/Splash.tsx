@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import Image from "next/image";
 
-import { useSplashShow } from "./hooks/useSplashShow";
+// import { useSplashShow } from "./hooks/useSplashShow";
 import {
   SplashContainer,
   SplashImageContainer,
@@ -36,13 +36,7 @@ export function Splash() {
         <Image alt="배나무" height={44} src="/images/title.png" width={143} />
       </TitleImageContainer>
       <SplashImageContainer>
-        <Image
-          alt="메인 화면 로딩"
-          height={1500}
-          layout="fill"
-          src="/images/splash.png"
-          width={1500}
-        />
+        <Image alt="메인 화면 로딩" layout="fill" src="/images/splash.png" />
       </SplashImageContainer>
     </SplashContainer>
   );
