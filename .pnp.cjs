@@ -37,7 +37,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:17.1.2"],\
             ["@commitlint/config-conventional", "npm:17.1.0"],\
             ["@mdx-js/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.6.22"],\
-            ["@reastorage/core", "npm:1.0.3"],\
             ["@reastorage/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.0.3"],\
             ["@stitches/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.2.8"],\
             ["@storybook/addon-actions", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:6.4.22"],\
@@ -20238,7 +20237,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:17.1.2"],\
             ["@commitlint/config-conventional", "npm:17.1.0"],\
             ["@mdx-js/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.6.22"],\
-            ["@reastorage/core", "npm:1.0.3"],\
             ["@reastorage/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.0.3"],\
             ["@stitches/react", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.2.8"],\
             ["@storybook/addon-actions", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:6.4.22"],\
