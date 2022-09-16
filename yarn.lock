@@ -3684,6 +3684,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@reastorage/core@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@reastorage/core@npm:1.0.3"
+  dependencies:
+    lz-string: ^1.4.4
+  checksum: 4785a49156fcafe98a75a09c90edc8910604e1f9c5d64cabbfb313dce0bbac7514a20aa46299ef3147bae7f2646e883f1fb340970cba5b42db86b186c7dfd7f2
+  languageName: node
+  linkType: hard
+
+"@reastorage/react@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@reastorage/react@npm:1.0.3"
+  dependencies:
+    "@reastorage/core": ^1.0.3
+    use-sync-external-store: ^1.2.0
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: fb60098dcbce15cf440fada3332f356c7f4c3ebd7cd8c57992de9f0470be0c1535f32c58e1cfd9bbcc2db9fe2647c4f5ee8078688246306a7c214b4d2fc64a2a
+  languageName: node
+  linkType: hard
+
 "@rushstack/eslint-patch@npm:1.0.8":
   version: 1.0.8
   resolution: "@rushstack/eslint-patch@npm:1.0.8"
@@ -14567,6 +14588,8 @@ __metadata:
     "@commitlint/cli": ^17.1.2
     "@commitlint/config-conventional": ^17.1.0
     "@mdx-js/react": ^1.6.22
+    "@reastorage/core": ^1.0.3
+    "@reastorage/react": ^1.0.3
     "@stitches/react": ^1.2.8
     "@storybook/addon-actions": ^6.4.22
     "@storybook/addon-docs": ^6.4.22
