@@ -1,6 +1,6 @@
 import { styled } from "@styles";
 
-const inputVariants = {
+const inputVariants = styled("input", {
   defaultVariants: {
     color: "gray",
     fatBorder: false,
@@ -37,14 +37,14 @@ const inputVariants = {
       },
     },
   },
-};
+});
 
 /**
  * @fatBorder {boolean} border-width: 0.2rem;
  * @color {string} border-color: error | gray | primary;
  * @type {string} width: fit | full | half;
  */
-export const Input = styled("input", {
+export const Input = styled(inputVariants, {
   "&:focus": {
     borderColor: "$main01",
     outline: 0,
@@ -58,5 +58,4 @@ export const Input = styled("input", {
   fontSize: "$14",
   m: 0,
   p: "$15 $18",
-  ...inputVariants,
 });

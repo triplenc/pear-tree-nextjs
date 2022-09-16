@@ -1,6 +1,6 @@
 import { styled } from "@styles";
 
-const flexVariants = {
+const flexVariants = styled("div", {
   defaultVariants: {
     align: "stretch",
     direction: "row",
@@ -56,11 +56,10 @@ const flexVariants = {
       },
     },
   },
-};
+});
 
-export const Flex = styled("div", {
+export const Flex = styled(flexVariants, {
   display: "flex",
   m: "0",
   p: "0",
-  ...flexVariants,
 });

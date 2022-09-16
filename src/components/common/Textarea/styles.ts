@@ -1,6 +1,6 @@
 import { styled } from "@styles";
 
-const textareaVariants = {
+const textareaVariants = styled("textarea", {
   defaultVariants: {
     color: "white",
     size: "tall",
@@ -26,9 +26,9 @@ const textareaVariants = {
       },
     },
   },
-};
+});
 
-export const TextareaStyle = styled("textarea", {
+export const TextareaStyle = styled(textareaVariants, {
   "&:focus": {
     outline: 0,
   },
@@ -38,5 +38,4 @@ export const TextareaStyle = styled("textarea", {
   fontWeight: "$regular",
   resize: "none",
   width: "100%",
-  ...textareaVariants,
 });

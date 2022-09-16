@@ -1,6 +1,6 @@
 import { styled } from "@styles";
 
-const buttonVariants = {
+const buttonVariants = styled("button", {
   defaultVariants: {
     height: "normal",
     size: "large",
@@ -82,9 +82,9 @@ const buttonVariants = {
       },
     },
   },
-};
+});
 
-export const Button = styled("button", {
+export const Button = styled(buttonVariants, {
   alignItems: "center",
   borderRadius: "$10",
   borderStyle: "solid",
@@ -92,5 +92,4 @@ export const Button = styled("button", {
   display: "flex",
   justifyContent: "center",
   p: "$10",
-  ...buttonVariants,
 });
