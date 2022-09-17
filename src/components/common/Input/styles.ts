@@ -1,7 +1,5 @@
 import { styled } from "@styles";
 
-import { Box } from "../Box";
-
 export const inputVariants = styled("input", {
   defaultVariants: {
     color: "gray",
@@ -71,24 +69,4 @@ export const Input = styled(inputVariants, {
   fontSize: "$14",
   m: 0,
   p: "$12 $18",
-});
-
-export const InputWithIconContainer = styled(Box, {
-  position: "relative",
-  width: "100%",
-});
-
-export const InputIconContainer = styled("button", {
-  position: "absolute",
-  transform: "translateY(30%)",
-  variants: {
-    position: {
-      left: {
-        left: "$8",
-      },
-      right: {
-        right: "$8",
-      },
-    },
-  },
 });

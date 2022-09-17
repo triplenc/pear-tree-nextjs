@@ -2,12 +2,9 @@ import { ElementType, InputHTMLAttributes, useMemo } from "react";
 
 import { VariantProps } from "@stitches/react";
 
-import {
-  Input,
-  InputIconContainer,
-  inputVariants,
-  InputWithIconContainer,
-} from "./styles";
+import { Input, inputVariants } from "../styles";
+
+import { InputIconContainer, InputWithIconContainer } from "./styles";
 
 type InputProps = VariantProps<typeof inputVariants> &
   InputHTMLAttributes<HTMLInputElement>;
