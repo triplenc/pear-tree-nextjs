@@ -1,20 +1,9 @@
-import { ElementType, InputHTMLAttributes, useMemo } from "react";
+import { useMemo } from "react";
 
-import { VariantProps } from "@stitches/react";
+import { Input } from "../styles";
 
-import { Input, inputVariants } from "../styles";
-
+import { InputWithIcon } from "./interfaces";
 import { InputIconContainer, InputWithIconContainer } from "./styles";
-
-type InputProps = VariantProps<typeof inputVariants> &
-  InputHTMLAttributes<HTMLInputElement>;
-
-interface InputWithIcon extends InputProps {
-  LeftIcon?: ElementType;
-  RightIcon?: ElementType;
-  leftIconOnClick?: VoidFunction;
-  rightIconOnClick?: VoidFunction;
-}
 
 export function InputWithIcon({
   LeftIcon,
