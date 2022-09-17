@@ -1,18 +1,20 @@
-import { BottomNavigation } from "./BottomNavigation/BottomNavigation";
+import { MemoBottomNavigation } from "./BottomNavigation";
 import { LayoutProps } from "./interfaces";
 import { LayoutContainer } from "./styles";
 
 export function Layout({
+  backgroundColor = "white",
   children,
-  headerType,
-  isShowBottomNavigation,
+  headerType = "navigation",
+  isShowBottomNavigation = true,
 }: LayoutProps) {
   return (
     <LayoutContainer
+      backgroundColor={backgroundColor}
       headerType={headerType}
       isShowBottomNavigation={isShowBottomNavigation}>
       {children}
-      {isShowBottomNavigation ? <BottomNavigation /> : null}
+      {isShowBottomNavigation ? <MemoBottomNavigation /> : null}
     </LayoutContainer>
   );
 }

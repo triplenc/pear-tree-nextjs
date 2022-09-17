@@ -21,7 +21,7 @@ export const flexColumnCreator: FlexColumnCreator = (
 ) => {
   const flexCss = flexCreator(alignItems, justifyContent, gap);
 
-  flexCss.direction = "column";
+  flexCss.flexDirection = "column";
 
   return flexCss;
 };

@@ -3,12 +3,18 @@ import { flexColumnCreator, styled } from "@styles";
 
 import { BOTTOM_NAVIGATION_HEIGHT } from "./BottomNavigation/styles";
 
-const LayoutContainerVariants = styled(Box, {
+export const LayoutContainerVariants = styled(Box, {
   defaultVariants: {
+    backgroundColor: "$white",
     headerType: "navigation",
     isShowBottomNavigation: true,
   },
   variants: {
+    backgroundColor: {
+      white: {
+        backgroundColor: "$white",
+      },
+    },
     headerType: {
       locationSearch: {},
       navigation: {},
@@ -26,5 +32,4 @@ export const LayoutContainer = styled(LayoutContainerVariants, {
   ...flexColumnCreator(),
   minHeight: "100vh",
   position: "relative",
-  ...LayoutContainerVariants,
 });
