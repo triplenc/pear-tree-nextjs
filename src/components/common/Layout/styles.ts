@@ -2,6 +2,7 @@ import { Box } from "@components/common";
 import { flexColumnCreator, styled } from "@styles";
 
 import { BOTTOM_NAVIGATION_HEIGHT } from "./BottomNavigation/styles";
+import { LOCATION_SEARCH_HEADER_HEIGHT } from "./LocationSearchHeader/styles";
 
 export const LayoutContainerVariants = styled(Box, {
   defaultVariants: {
@@ -16,7 +17,9 @@ export const LayoutContainerVariants = styled(Box, {
       },
     },
     headerType: {
-      locationSearch: {},
+      locationSearch: {
+        paddingTop: LOCATION_SEARCH_HEADER_HEIGHT,
+      },
       navigation: {},
     },
     isShowBottomNavigation: {
