@@ -46,7 +46,7 @@ export const inputVariants = styled("input", {
         pl: "4rem",
       },
       right: {
-        pr: "$4rem",
+        pr: "4rem",
       },
     },
   },
