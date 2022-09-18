@@ -1,9 +1,8 @@
-import { Box } from "@components/common";
-import { flexCreator, styled } from "@styles";
+import { flexColumnCreator, flexCreator, styled } from "@styles";
 
 export const BOTTOM_NAVIGATION_HEIGHT = "8rem";
 
-export const BottomNavigationContainer = styled(Box, {
+export const BottomNavigationContainer = styled("nav", {
   ...flexCreator("center", "space-around"),
   backgroundColor: "$white",
   borderTopLeftRadius: "3rem",
@@ -11,8 +10,28 @@ export const BottomNavigationContainer = styled(Box, {
   bottom: 0,
   boxShadow: "0 -0.2rem 0.4rem rgba(0, 0, 0, 0.25)",
   height: BOTTOM_NAVIGATION_HEIGHT,
-  left: 0,
+  left: "50%",
+  maxWidth: "65rem",
   position: "fixed",
-  right: 0,
+  right: "50%",
+  transform: "translateX(-50%)",
   width: "100%",
+});
+
+export const BottomNavigationLink = styled("a", {
+  ...flexColumnCreator("center", "center", "0.4rem"),
+  defaultVariants: {
+    active: false,
+  },
+  minWidth: "5rem",
+  variants: {
+    active: {
+      false: {
+        color: "$gray01",
+      },
+      true: {
+        color: "$main01",
+      },
+    },
+  },
 });

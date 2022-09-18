@@ -7,22 +7,22 @@ export type AlignItems = AlignItemsValue | FlexCommonValue;
 export type JustifyContent = JustifyContentValue | FlexCommonValue;
 export interface FlexCreatorReturn {
   alignItems?: AlignItems;
-  direction?: "row" | "column";
   display: "flex";
-  gap?: number;
+  flexDirection?: "row" | "column";
+  gap?: string;
   justifyContent?: JustifyContent;
 }
 export interface FlexCreator {
   (
     alignItems?: Nullable<AlignItems>,
     justifyContent?: Nullable<JustifyContent>,
-    gap?: number,
+    gap?: string,
   ): FlexCreatorReturn;
 }
 export interface FlexColumnCreator {
   (
     alignItems?: Nullable<AlignItems>,
     justifyContent?: Nullable<JustifyContent>,
-    gap?: number,
+    gap?: string,
   ): FlexCreatorReturn;
 }

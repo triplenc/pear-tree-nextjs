@@ -23,6 +23,7 @@ export const colors = {
 };
 
 export const fontSizes = {
+  "10": "1rem",
   "12": "1.2rem",
   "13": "1.3rem",
   "14": "1.4rem",

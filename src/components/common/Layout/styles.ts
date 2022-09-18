@@ -2,15 +2,24 @@ import { Box } from "@components/common";
 import { flexColumnCreator, styled } from "@styles";
 
 import { BOTTOM_NAVIGATION_HEIGHT } from "./BottomNavigation/styles";
+import { LOCATION_SEARCH_HEADER_HEIGHT } from "./LocationSearchHeader/styles";
 
-const LayoutContainerVariants = styled(Box, {
+export const LayoutContainerVariants = styled(Box, {
   defaultVariants: {
+    backgroundColor: "$white",
     headerType: "navigation",
     isShowBottomNavigation: true,
   },
   variants: {
+    backgroundColor: {
+      white: {
+        backgroundColor: "$white",
+      },
+    },
     headerType: {
-      locationSearch: {},
+      locationSearch: {
+        paddingTop: LOCATION_SEARCH_HEADER_HEIGHT,
+      },
       navigation: {},
     },
     isShowBottomNavigation: {
@@ -26,5 +35,4 @@ export const LayoutContainer = styled(LayoutContainerVariants, {
   ...flexColumnCreator(),
   minHeight: "100vh",
   position: "relative",
-  ...LayoutContainerVariants,
 });
