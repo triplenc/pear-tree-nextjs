@@ -11,7 +11,7 @@ export function Header({
   return (
     <HeaderContainer>
       {headerType === "locationSearch" ? <MemoLocationSearchHeader /> : null}
-      {headerType === "navigation" ? <MemoLocationSearchHeader /> : null}
+      {headerType === "navigation" ? <div>navigation</div> : null}
     </HeaderContainer>
   );
 }

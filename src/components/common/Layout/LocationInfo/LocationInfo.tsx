@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 
 import { H2 } from "@components/common";
 import ArrowDownIcon from "@icons/fill-arrow-down.svg";
@@ -7,7 +7,7 @@ import { theme } from "@styles";
 import { LocationInfoContainer } from "./styles";
 
 export function LocationInfo({ color }: { color: "white" | "black" }) {
-  const address = "마포구 상수동";
+  const [address] = useState("마포구 상수동");
 
   const onClickLocationConfig = useCallback(() => {
     console.info("on click location config");

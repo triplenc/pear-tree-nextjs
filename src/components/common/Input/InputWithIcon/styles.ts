@@ -1,7 +1,6 @@
-import { Box } from "@components/common";
 import { styled } from "@styles";
 
-export const InputWithIconContainer = styled(Box, {
+export const InputWithIconContainer = styled("div", {
   position: "relative",
   width: "100%",
 });
