@@ -1,20 +1,21 @@
 import { useEffect, useMemo, useState } from "react";
 
+import { getCookie, setCookie } from "cookies-next";
 import dayjs from "dayjs";
 
-import { reastorage, useReastorage } from "@reastorage/react";
+import { isString } from "@types";
 
 import { fadeOutPlayTime } from "../styles";
-
-const nowShowSplashTime = reastorage("showSplashTime", "");
 
 export function useSplashShow() {
   const today = dayjs();
   const todayString = today.format();
 
-  const [showSplashTime, setShowSplashTime] = useReastorage(nowShowSplashTime);
+  const [showSplashTime, setShowSplashTime] = useState(
+    getCookie("showSplashTime"),
+  );
   const isNeedToShowSplash = useMemo(() => {
-    if (showSplashTime === "") return true;
+    if (!isString(showSplashTime)) return true;
 
     const timeGapAsDay = today.diff(dayjs(showSplashTime), "hour");
 
@@ -35,6 +36,10 @@ export function useSplashShow() {
       setIsShowSplashAnimation(false);
     }, 2000 + fadeOutPlayTime);
   }, [isNeedToShowSplash, setShowSplashTime, todayString, isShowSplash]);
+
+  useEffect(() => {
+    setCookie("showSplashTime", showSplashTime);
+  }, [showSplashTime]);
 
   return { isShowSplash, isShowSplashAnimation };
 }
