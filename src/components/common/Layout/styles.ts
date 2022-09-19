@@ -1,10 +1,9 @@
-import { Box } from "@components/common";
 import { flexColumnCreator, styled } from "@styles";
 
 import { BOTTOM_NAVIGATION_HEIGHT } from "./BottomNavigation/styles";
 import { LOCATION_SEARCH_HEADER_HEIGHT } from "./LocationSearchHeader/styles";
 
-export const LayoutContainerVariants = styled(Box, {
+export const LayoutContainerVariants = styled("div", {
   defaultVariants: {
     backgroundColor: "$white",
     headerType: "navigation",

@@ -1,6 +1,5 @@
-import { Box } from "@components/common";
 import { flexCreator, styled } from "@styles";
 
-export const LocationInfoContainer = styled(Box, {
+export const LocationInfoContainer = styled("button", {
   ...flexCreator("center", "center", "$8"),
 });
