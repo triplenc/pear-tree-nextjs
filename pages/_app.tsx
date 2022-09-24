@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import Script from "next/script";
 import { RecoilRoot } from "recoil";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -26,6 +27,10 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
       </Head>
       <QueryClientProvider client={queryClient}>
         <RecoilRoot>
+          <Script
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f8338f090ba2ad676429eefdd0fdbb01&autoload=false&libraries=services,clusterer,drawing"
+            strategy="beforeInteractive"
+          />
           <Component {...pageProps} />
         </RecoilRoot>
       </QueryClientProvider>
