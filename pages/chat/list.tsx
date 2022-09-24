@@ -1,13 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+import { Layout } from "@components/common";
+
 const ChatList: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>채팅방 목록</title>
       </Head>
-    </div>
+      <Layout>채팅방 목록</Layout>
+    </>
   );
 };
 

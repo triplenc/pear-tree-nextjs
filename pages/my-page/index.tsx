@@ -1,13 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+import { Layout } from "@components/common";
+
 const MyPage: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>내 정보</title>
       </Head>
-    </div>
+      <Layout>마이 페이지</Layout>
+    </>
   );
 };
 

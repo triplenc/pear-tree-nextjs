@@ -1,6 +1,6 @@
 import { styled } from "@styles";
 
-const inputVariants = styled("input", {
+export const inputVariants = styled("input", {
   defaultVariants: {
     color: "gray",
     fatBorder: false,
@@ -36,6 +36,17 @@ const inputVariants = styled("input", {
         width: "50%",
       },
     },
+    withIcon: {
+      both: {
+        px: "4rem",
+      },
+      left: {
+        pl: "4rem",
+      },
+      right: {
+        pr: "4rem",
+      },
+    },
   },
 });
 
@@ -57,5 +68,5 @@ export const Input = styled(inputVariants, {
   borderWidth: "0.08rem",
   fontSize: "$14",
   m: 0,
-  p: "$15 $18",
+  p: "$12 $18",
 });
