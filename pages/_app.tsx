@@ -28,8 +28,7 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
       <QueryClientProvider client={queryClient}>
         <RecoilRoot>
           <Script
-            id="kakao-maps"
-            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f8338f090ba2ad676429eefdd0fdbb01&autoload=false&libraries=services,clusterer,drawing"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f8338f090ba2ad676429eefdd0fdbb01&autoload=false&libraries=services,clusterer&autoload=false"
             strategy="beforeInteractive"
             onError={(e) => {
               console.error("map을 불러오지 못했습니다", e);

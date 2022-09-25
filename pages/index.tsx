@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 
 import { Layout } from "@components/common";
-import { MapComponent } from "@components/home/Map";
+import { MapComponent } from "@components/common/Map";
 import { Splash } from "@components/home/Splash";
 
 const Home: NextPage = () => {
