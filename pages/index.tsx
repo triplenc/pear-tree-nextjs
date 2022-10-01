@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 
-import { Layout } from "@components/common";
-import { MapComponent } from "@components/common/Map";
-import { Splash } from "@components/home/Splash";
+import { Divider, Layout } from "@components/common";
+import { MapHome, Splash } from "@components/home";
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +9,8 @@ const Home: NextPage = () => {
       <Splash />
       <Layout headerType="locationSearch">
         home page
-        <MapComponent lattitude={33.5563} longitude={126.79581} />
+        <Divider height="6" />
+        <MapHome />
       </Layout>
     </>
   );

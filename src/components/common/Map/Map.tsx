@@ -21,7 +21,7 @@ export function MapComponent({
         center={{ lat: latitude, lng: longitude }}
         id="map"
         level={level}
-        style={{ height: "360px", width: "100%" }}>
+        style={{ height: "100%", width: "100%" }}>
         <MapMarker
           position={{ lat: latitude, lng: longitude }}
           image={{
