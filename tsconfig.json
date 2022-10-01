@@ -16,10 +16,9 @@
     "allowSyntheticDefaultImports": true,
     "incremental": true,
     "baseUrl": "./",
-    "types": [
-      "kakao.maps.d.ts"
-    ],
+    "types": ["kakao.maps.d.ts"],
     "paths": {
+      "@atoms/*": ["src/atoms/*"],
       "@apis/*": ["src/service/apis/*"],
       "@queries/*": ["src/service/queries/*"],
       "@hooks": ["src/hooks"],
