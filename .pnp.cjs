@@ -77,7 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:17.0.2"],\
-            ["react-kakao-maps-sdk", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.1.3"],\
+            ["react-kakao-maps-sdk", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.1.4"],\
             ["tsconfig-paths-webpack-plugin", "npm:4.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=f456af"]\
           ],\
@@ -20379,7 +20379,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:17.0.2"],\
-            ["react-kakao-maps-sdk", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.1.3"],\
+            ["react-kakao-maps-sdk", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.1.4"],\
             ["tsconfig-paths-webpack-plugin", "npm:4.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=f456af"]\
           ],\
@@ -21367,17 +21367,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["react-kakao-maps-sdk", [\
-        ["npm:1.1.3", {\
-          "packageLocation": "./.yarn/cache/react-kakao-maps-sdk-npm-1.1.3-644f0c1116-b8bcdb561b.zip/node_modules/react-kakao-maps-sdk/",\
+        ["npm:1.1.4", {\
+          "packageLocation": "./.yarn/cache/react-kakao-maps-sdk-npm-1.1.4-be0c310ef2-1dcc98131d.zip/node_modules/react-kakao-maps-sdk/",\
           "packageDependencies": [\
-            ["react-kakao-maps-sdk", "npm:1.1.3"]\
+            ["react-kakao-maps-sdk", "npm:1.1.4"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.1.3", {\
-          "packageLocation": "./.yarn/__virtual__/react-kakao-maps-sdk-virtual-658bd72c4a/0/cache/react-kakao-maps-sdk-npm-1.1.3-644f0c1116-b8bcdb561b.zip/node_modules/react-kakao-maps-sdk/",\
+        ["virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.1.4", {\
+          "packageLocation": "./.yarn/__virtual__/react-kakao-maps-sdk-virtual-871202afcd/0/cache/react-kakao-maps-sdk-npm-1.1.4-be0c310ef2-1dcc98131d.zip/node_modules/react-kakao-maps-sdk/",\
           "packageDependencies": [\
-            ["react-kakao-maps-sdk", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.1.3"],\
+            ["react-kakao-maps-sdk", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.1.4"],\
             ["@types/react", "npm:17.0.45"],\
             ["@types/react-dom", "npm:17.0.14"],\
             ["kakao.maps.d.ts", "npm:0.1.33"],\
