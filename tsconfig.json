@@ -19,7 +19,7 @@
     "types": ["kakao.maps.d.ts"],
     "paths": {
       "@atoms/*": ["src/atoms/*"],
-      "@apis/*": ["src/service/apis/*"],
+      "@api": ["src/service/api"],
       "@queries/*": ["src/service/queries/*"],
       "@hooks": ["src/hooks"],
       "@lib/*": ["src/lib/*"],
