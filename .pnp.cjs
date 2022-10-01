@@ -71,13 +71,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-storybook", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:0.5.11"],\
             ["eslint-plugin-typescript-sort-keys", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:2.1.0"],\
             ["husky", "npm:8.0.1"],\
+            ["jotai", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.8.4"],\
             ["lint-staged", "npm:13.0.3"],\
             ["next", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:12.1.1"],\
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:17.0.2"],\
             ["react-kakao-maps-sdk", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.1.3"],\
-            ["recoil", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:0.7.2"],\
             ["tsconfig-paths-webpack-plugin", "npm:4.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=f456af"]\
           ],\
@@ -16423,15 +16423,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["hamt_plus", [\
-        ["npm:1.0.2", {\
-          "packageLocation": "./.yarn/cache/hamt_plus-npm-1.0.2-67a52ee1df-af26ea32db.zip/node_modules/hamt_plus/",\
-          "packageDependencies": [\
-            ["hamt_plus", "npm:1.0.2"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["handlebars", [\
         ["npm:4.7.7", {\
           "packageLocation": "./.yarn/cache/handlebars-npm-4.7.7-a9ccfabf80-1e79a43f5e.zip/node_modules/handlebars/",\
@@ -17946,6 +17937,64 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:17.0.33"],\
             ["merge-stream", "npm:2.0.0"],\
             ["supports-color", "npm:7.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["jotai", [\
+        ["npm:1.8.4", {\
+          "packageLocation": "./.yarn/cache/jotai-npm-1.8.4-8230af6743-a3e9ffe9d1.zip/node_modules/jotai/",\
+          "packageDependencies": [\
+            ["jotai", "npm:1.8.4"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.8.4", {\
+          "packageLocation": "./.yarn/__virtual__/jotai-virtual-91938cc3a2/0/cache/jotai-npm-1.8.4-8230af6743-a3e9ffe9d1.zip/node_modules/jotai/",\
+          "packageDependencies": [\
+            ["jotai", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.8.4"],\
+            ["@babel/core", "npm:7.17.10"],\
+            ["@babel/template", null],\
+            ["@tanstack/query-core", null],\
+            ["@types/babel__core", null],\
+            ["@types/babel__template", null],\
+            ["@types/immer", null],\
+            ["@types/optics-ts", null],\
+            ["@types/react", "npm:17.0.45"],\
+            ["@types/tanstack__query-core", null],\
+            ["@types/urql__core", null],\
+            ["@types/valtio", null],\
+            ["@types/wonka", null],\
+            ["@types/xstate", null],\
+            ["@urql/core", null],\
+            ["immer", null],\
+            ["optics-ts", null],\
+            ["react", "npm:17.0.2"],\
+            ["valtio", null],\
+            ["wonka", null],\
+            ["xstate", null]\
+          ],\
+          "packagePeers": [\
+            "@babel/core",\
+            "@babel/template",\
+            "@tanstack/query-core",\
+            "@types/babel__core",\
+            "@types/babel__template",\
+            "@types/immer",\
+            "@types/optics-ts",\
+            "@types/react",\
+            "@types/tanstack__query-core",\
+            "@types/urql__core",\
+            "@types/valtio",\
+            "@types/wonka",\
+            "@types/xstate",\
+            "@urql/core",\
+            "immer",\
+            "optics-ts",\
+            "react",\
+            "valtio",\
+            "wonka",\
+            "xstate"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -20324,13 +20373,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-storybook", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:0.5.11"],\
             ["eslint-plugin-typescript-sort-keys", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:2.1.0"],\
             ["husky", "npm:8.0.1"],\
+            ["jotai", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.8.4"],\
             ["lint-staged", "npm:13.0.3"],\
             ["next", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:12.1.1"],\
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:17.0.2"],\
             ["react-kakao-maps-sdk", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:1.1.3"],\
-            ["recoil", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:0.7.2"],\
             ["tsconfig-paths-webpack-plugin", "npm:4.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=f456af"]\
           ],\
@@ -21639,37 +21688,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["readdirp", "npm:3.6.0"],\
             ["picomatch", "npm:2.3.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["recoil", [\
-        ["npm:0.7.2", {\
-          "packageLocation": "./.yarn/cache/recoil-npm-0.7.2-627eacb0da-2ad0c2052f.zip/node_modules/recoil/",\
-          "packageDependencies": [\
-            ["recoil", "npm:0.7.2"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:0.7.2", {\
-          "packageLocation": "./.yarn/__virtual__/recoil-virtual-889e6b7fea/0/cache/recoil-npm-0.7.2-627eacb0da-2ad0c2052f.zip/node_modules/recoil/",\
-          "packageDependencies": [\
-            ["recoil", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:0.7.2"],\
-            ["@types/react", "npm:17.0.45"],\
-            ["@types/react-dom", "npm:17.0.14"],\
-            ["@types/react-native", null],\
-            ["hamt_plus", "npm:1.0.2"],\
-            ["react", "npm:17.0.2"],\
-            ["react-dom", "virtual:1c7ee636c8d9ae34b380084ff8604c10620a081d5c1a8baf13cf9d073db0d024e93ccd223ece140bae402e7f1c0cd3ab43a272ac267a3b317d6c5fc5d97f4873#npm:17.0.2"],\
-            ["react-native", null]\
-          ],\
-          "packagePeers": [\
-            "@types/react-dom",\
-            "@types/react-native",\
-            "@types/react",\
-            "react-dom",\
-            "react-native",\
-            "react"\
           ],\
           "linkType": "HARD"\
         }]\
