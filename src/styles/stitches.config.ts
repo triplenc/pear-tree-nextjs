@@ -55,6 +55,7 @@ export const space = {
   "26": "2.6rem",
   "28": "2.8rem",
   "30": "3rem",
+  mobileMax: "45rem",
 };
 
 export const {

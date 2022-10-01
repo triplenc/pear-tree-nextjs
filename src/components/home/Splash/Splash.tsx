@@ -23,7 +23,12 @@ export function Splash() {
         <Image alt="배나무" height={44} src="/images/title.png" width={143} />
       </TitleImageContainer>
       <SplashImageContainer>
-        <Image alt="메인 화면 로딩" layout="fill" src="/images/splash.png" />
+        <Image
+          priority
+          alt="메인 화면 로딩"
+          layout="fill"
+          src="/images/splash.png"
+        />
       </SplashImageContainer>
     </SplashContainer>
   );
