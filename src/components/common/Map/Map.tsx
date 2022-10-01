@@ -3,13 +3,13 @@ import { Map, MapMarker, ZoomControl } from "react-kakao-maps-sdk";
 import MyLocation from "@icons/map-my-location.svg";
 
 interface MapComponentProps {
-  lattitude: number;
+  latitude: number;
   level?: number;
   longitude: number;
 }
 
 export function MapComponent({
-  lattitude = 33.5563,
+  latitude = 33.5563,
   level = 3,
   longitude = 126.79581,
 }: MapComponentProps) {
@@ -18,12 +18,12 @@ export function MapComponent({
   return (
     <>
       <Map
-        center={{ lat: lattitude, lng: longitude }}
+        center={{ lat: latitude, lng: longitude }}
         id="map"
         level={level}
         style={{ height: "360px", width: "100%" }}>
         <MapMarker
-          position={{ lat: lattitude, lng: longitude }}
+          position={{ lat: latitude, lng: longitude }}
           image={{
             size: {
               height: 66,
