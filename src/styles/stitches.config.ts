@@ -40,6 +40,7 @@ export const fontWeights = {
 };
 
 export const space = {
+  "1": "0.1rem",
   "2": "0.2rem",
   "4": "0.4rem",
   "6": "0.6rem",
@@ -55,6 +56,7 @@ export const space = {
   "26": "2.6rem",
   "28": "2.8rem",
   "30": "3rem",
+  mobileMax: "45rem",
 };
 
 export const {

@@ -7,9 +7,13 @@ import { inputVariants } from "../styles";
 export type InputProps = VariantProps<typeof inputVariants> &
   InputHTMLAttributes<HTMLInputElement>;
 
-export interface InputWithIcon extends InputProps {
-  LeftIcon?: ElementType;
-  RightIcon?: ElementType;
+interface Icon {
+  icon: ElementType;
+  name: string;
+}
+export interface InputWithIconProps extends InputProps {
+  LeftIcon?: Icon;
+  RightIcon?: Icon;
   leftIconOnClick?: VoidFunction;
   rightIconOnClick?: VoidFunction;
 }

@@ -2,7 +2,7 @@ import { styled } from "@styles";
 
 export const HeaderContainer = styled("header", {
   left: "50%",
-  maxWidth: "65rem",
+  maxWidth: "$mobileMax",
   position: "fixed",
   right: "50%",
   top: 0,

@@ -11,7 +11,7 @@ export const BottomNavigationContainer = styled("nav", {
   boxShadow: "0 -0.2rem 0.4rem rgba(0, 0, 0, 0.25)",
   height: BOTTOM_NAVIGATION_HEIGHT,
   left: "50%",
-  maxWidth: "65rem",
+  maxWidth: "$mobileMax",
   position: "fixed",
   right: "50%",
   transform: "translateX(-50%)",
