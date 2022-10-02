@@ -22,7 +22,7 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
       <Head>
         <title>배나무</title>
         <meta
-          content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
           name="viewport"
         />
       </Head>
