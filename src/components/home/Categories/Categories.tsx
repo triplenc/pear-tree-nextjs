@@ -16,8 +16,8 @@ export function Categories() {
   const categoryList = useCategoryList();
   return (
     <CategoriesContainer>
-      {categoryList.map(({ key, name }) => (
-        <CategoryButton key={key} categoryKey={key} name={name} />
+      {categoryList.map((category) => (
+        <CategoryButton key={category.path} {...category} />
       ))}
     </CategoriesContainer>
   );

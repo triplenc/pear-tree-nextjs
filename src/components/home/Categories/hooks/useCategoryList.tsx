@@ -1,61 +1,69 @@
 import { useState } from "react";
 
-import { CategoryKey, CategoryName } from "@types";
+import { Category } from "../interfaces";
 
-interface Category {
-  key: CategoryKey;
-  name: CategoryName;
-}
-// TODO: icon 순서 및 image url, key, name 백엔드 이관
+// TODO: icon 순서 및 image url, path, name 백엔드 이관
 export const useCategoryList = () => {
   const [categoryList] = useState<Category[]>([
     {
-      key: "all",
+      image: "/images/spoon-and-chopstick.png",
       name: "전체",
+      path: "all",
     },
     {
-      key: "korean",
+      image: "/images/rice-bowl.png",
       name: "한식",
+      path: "korean",
     },
     {
-      key: "chinese",
+      image: "/images/chinese.png",
       name: "중식",
+      path: "chinese",
     },
     {
-      key: "japanese",
+      image: "/images/sushi.png",
       name: "일식/회",
+      path: "japanese",
     },
     {
-      key: "pasta",
+      image: "/images/pasta.png",
       name: "양식",
+      path: "pasta",
     },
     {
-      key: "dduckbokki",
+      image: "/images/dduckbokki.png",
       name: "분식",
+      path: "dduckbokki",
     },
     {
-      key: "chicken",
+      image: "/images/chicken.png",
       name: "치킨/고기",
+      path: "chicken",
     },
     {
-      key: "pizza",
+      image: "/images/pizza.png",
       name: "피자",
+      path: "pizza",
     },
     {
-      key: "burger",
+      image: "/images/burger.png",
       name: "버거",
+      path: "burger",
     },
     {
-      key: "soup",
+      image: "/images/soup.png",
       name: "찜/탕",
+      path: "soup",
     },
     {
-      key: "doughnut",
+      image: "/images/doughnut.png",
       name: "카페/디저트",
+      path: "doughnut",
     },
     {
-      key: "salad",
+      image: "/images/avocado.png",
       name: "샐러드",
+      path: "salad",
     },
   ]);
   return categoryList;
