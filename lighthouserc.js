@@ -34,6 +34,7 @@ module.exports = {
           uploadThroughputKbps: 0,
         },
       },
+      startServerCommand: "yarn start",
       url: "http://localhost:3000/",
     },
     upload: {
