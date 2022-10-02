@@ -16,6 +16,7 @@ export const BottomNavigationContainer = styled("nav", {
   right: "50%",
   transform: "translateX(-50%)",
   width: "100%",
+  zIndex: 5,
 });
 
 export const BottomNavigationLink = styled("a", {
