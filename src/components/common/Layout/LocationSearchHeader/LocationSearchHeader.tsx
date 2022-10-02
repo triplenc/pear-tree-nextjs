@@ -12,7 +12,7 @@ function LocationSearchHeader() {
     <LocationSearchHeaderContainer>
       <LocationInfo color="white" />
       <InputWithIcon
-        LeftIcon={SearchIcon}
+        LeftIcon={{ icon: SearchIcon, name: "메뉴 검색" }}
         placeholder="원하는 메뉴를 검색해봐요!"
       />
     </LocationSearchHeaderContainer>
