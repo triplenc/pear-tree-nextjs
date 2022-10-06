@@ -1,14 +1,14 @@
 import type { NextPage } from "next";
 
 import { Divider, Layout } from "@components/common";
-import { MapHome, Splash } from "@components/home";
+import { Categories, MapHome, Splash } from "@components/home";
 
 const Home: NextPage = () => {
   return (
     <>
       <Splash />
       <Layout headerType="locationSearch">
-        home page
+        <Categories />
         <Divider height="6" />
         <MapHome />
       </Layout>

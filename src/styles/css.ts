@@ -4,6 +4,11 @@ import {
   FlexCreatorReturn,
 } from "./interfaces";
 
+/**
+ * @param alignItems
+ * @param justifyContent
+ * @param gap
+ */
 export const flexCreator: FlexCreator = (alignItems, justifyContent, gap) => {
   const flexCss: FlexCreatorReturn = { display: "flex" };
 
@@ -14,6 +19,11 @@ export const flexCreator: FlexCreator = (alignItems, justifyContent, gap) => {
   return flexCss;
 };
 
+/**
+ * @param alignItems
+ * @param justifyContent
+ * @param gap
+ */
 export const flexColumnCreator: FlexColumnCreator = (
   alignItems,
   justifyContent,
