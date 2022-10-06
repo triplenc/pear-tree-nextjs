@@ -8,4 +8,5 @@ export const HeaderContainer = styled("header", {
   top: 0,
   transform: "translateX(-50%)",
   width: "100%",
+  zIndex: 5,
 });

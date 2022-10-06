@@ -1,8 +1,5 @@
 import { flexColumnCreator, styled } from "@styles";
 
-import { BOTTOM_NAVIGATION_HEIGHT } from "./BottomNavigation/styles";
-import { LOCATION_SEARCH_HEADER_HEIGHT } from "./LocationSearchHeader/styles";
-
 export const LayoutContainerVariants = styled("div", {
   defaultVariants: {
     backgroundColor: "$white",
@@ -17,14 +14,16 @@ export const LayoutContainerVariants = styled("div", {
     },
     headerType: {
       locationSearch: {
-        paddingTop: LOCATION_SEARCH_HEADER_HEIGHT,
+        paddingTop: "$locationSearchHeaderHeight",
       },
-      navigation: {},
+      navigation: {
+        paddingTop: "$navigationHeaderHeight",
+      },
     },
     isShowBottomNavigation: {
       false: {},
       true: {
-        pb: BOTTOM_NAVIGATION_HEIGHT,
+        pb: "$bottomNavigationHeight",
       },
     },
   },

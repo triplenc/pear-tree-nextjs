@@ -16,7 +16,9 @@ export function LocationInfo({ color }: { color: "white" | "black" }) {
   }, []);
 
   return (
-    <LocationInfoContainer onClick={onClickLocationConfig}>
+    <LocationInfoContainer
+      aria-label="주소 설정"
+      onClick={onClickLocationConfig}>
       <H2 color={color}>{userLocationAsString}</H2>
       <ArrowDownIcon fill={theme.colors[color]} />
     </LocationInfoContainer>
