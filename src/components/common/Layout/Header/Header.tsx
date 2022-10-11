@@ -1,17 +1,22 @@
-import { LayoutProps } from "../interfaces";
+import { HeaderConfig, LayoutProps } from "../interfaces";
 import { MemoLocationSearchHeader } from "../LocationSearchHeader";
+import { MemoNavigationHeader } from "../NavigationHeader";
 
 import { HeaderContainer } from "./styles";
 
 export function Header({
-  headerType,
+  headerConfig,
+  type,
 }: {
-  headerType: LayoutProps["headerType"];
+  headerConfig?: HeaderConfig;
+  type: LayoutProps["headerType"];
 }) {
   return (
     <HeaderContainer>
-      {headerType === "locationSearch" ? <MemoLocationSearchHeader /> : null}
-      {headerType === "navigation" ? <div>navigation</div> : null}
+      {type === "locationSearch" ? <MemoLocationSearchHeader /> : null}
+      {type === "navigation" ? (
+        <MemoNavigationHeader headerConfig={headerConfig} />
+      ) : null}
     </HeaderContainer>
   );
 }

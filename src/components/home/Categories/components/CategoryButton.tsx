@@ -14,7 +14,7 @@ const CategoryLink = styled("a", {
 
 export function CategoryButton({ image, name, path }: Category) {
   return (
-    <Link passHref href={`/category/${path}`}>
+    <Link passHref href={`/party/${path}`}>
       <CategoryLink>
         <Image alt={name} height={56} src={image} width={56} />
         <Caption>{name}</Caption>
