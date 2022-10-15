@@ -8,19 +8,19 @@ import HomeIcon from "@icons/home.svg";
 import MyPageIcon from "@icons/user.svg";
 import { theme } from "@styles";
 
-import { NavigationInfo } from "./BottomNavigation";
-import { BottomNavigationLink } from "./styles";
+import { NavigationInfo } from "../interfaces";
+import { BottomNavigationLink } from "../styles";
 
 const MemoBottomNavigationIcon = memo(function BottomNavigationIcon({
+  active,
   icon,
-  isActive,
 }: {
+  active: boolean;
   icon: NavigationInfo["icon"];
-  isActive: boolean;
 }) {
   const color = useMemo(
-    () => (isActive ? theme.colors.main01 : theme.colors.gray01),
-    [isActive],
+    () => (active ? theme.colors.main01 : theme.colors.gray01),
+    [active],
   );
 
   switch (icon) {
@@ -43,7 +43,7 @@ function BottomNavigationButton({ icon, link, title }: NavigationInfo) {
   return (
     <Link passHref href={link}>
       <BottomNavigationLink active={isActive}>
-        <MemoBottomNavigationIcon icon={icon} isActive={isActive} />
+        <MemoBottomNavigationIcon active={isActive} icon={icon} />
         {title}
       </BottomNavigationLink>
     </Link>

@@ -1,5 +1,5 @@
 import { MemoBottomNavigation } from "./BottomNavigation";
-import { Header } from "./Header";
+import { MemoHeader } from "./Header";
 import { LayoutProps } from "./interfaces";
 import { LayoutContainer } from "./styles";
 
@@ -15,7 +15,7 @@ export function Layout({
       backgroundColor={backgroundColor}
       headerType={headerType}
       isShowBottomNavigation={isShowBottomNavigation}>
-      <Header headerConfig={headerConfig} type={headerType} />
+      <MemoHeader headerConfig={headerConfig} type={headerType} />
       {children}
       {isShowBottomNavigation ? <MemoBottomNavigation /> : null}
     </LayoutContainer>

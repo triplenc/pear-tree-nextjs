@@ -1,6 +1,6 @@
+import { useCategoryList } from "@hooks";
 import { flexCreator, styled } from "@styles";
 
-import { useCategoryList } from "./hooks/useCategoryList";
 import { CategoryButton } from "./components";
 
 const CategoriesContainer = styled("div", {
