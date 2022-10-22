@@ -6,6 +6,7 @@ import { LayoutContainer } from "./styles";
 export function Layout({
   backgroundColor = "white",
   children,
+  headerConfig,
   headerType = "navigation",
   isShowBottomNavigation = true,
 }: LayoutProps) {
@@ -14,7 +15,7 @@ export function Layout({
       backgroundColor={backgroundColor}
       headerType={headerType}
       isShowBottomNavigation={isShowBottomNavigation}>
-      <Header headerType={headerType} />
+      <Header headerConfig={headerConfig} type={headerType} />
       {children}
       {isShowBottomNavigation ? <MemoBottomNavigation /> : null}
     </LayoutContainer>

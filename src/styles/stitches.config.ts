@@ -22,7 +22,7 @@ export const colors = {
   white: "#ffffff",
 };
 
-export const fontSizes = {
+const fontSizes = {
   "10": "1rem",
   "12": "1.2rem",
   "13": "1.3rem",
@@ -32,14 +32,15 @@ export const fontSizes = {
   "21": "2.1rem",
 };
 
-export const fontWeights = {
+const fontWeights = {
   regular: 400,
   medium: 500,
   semiBold: 600,
   bold: 700,
 };
 
-export const space = {
+const space = {
+  "1": "0.1rem",
   "2": "0.2rem",
   "4": "0.4rem",
   "6": "0.6rem",
@@ -55,6 +56,11 @@ export const space = {
   "26": "2.6rem",
   "28": "2.8rem",
   "30": "3rem",
+
+  mobileMax: "45rem",
+  locationSearchHeaderHeight: "10rem",
+  navigationHeaderHeight: "4.8rem",
+  bottomNavigationHeight: "8rem",
 };
 
 export const {

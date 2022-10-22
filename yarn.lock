@@ -5320,18 +5320,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:4.3.1":
-  version: 4.3.1
-  resolution: "@tanstack/query-core@npm:4.3.1"
-  checksum: af3fba99af5cd0ac018e400c96b1a7817cc0a252d6a8760d63812b73e0b6b8dcddf389529ba47db11b96f4f67edc38e8407e662ed623c60402f38f4fb93ca886
+"@tanstack/match-sorter-utils@npm:^8.1.1":
+  version: 8.1.1
+  resolution: "@tanstack/match-sorter-utils@npm:8.1.1"
+  dependencies:
+    remove-accents: 0.4.2
+  checksum: bf1458b7ca08cf79750ebd46fddef9c9b845ef55b5b69c0f7f69d48d6cbd73dbfd98763509f655298033b93cfc92b21d54f9f13a4d631cc68ca9191913967205
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:^4.3.1":
-  version: 4.3.1
-  resolution: "@tanstack/react-query@npm:4.3.1"
+"@tanstack/query-core@npm:4.8.0":
+  version: 4.8.0
+  resolution: "@tanstack/query-core@npm:4.8.0"
+  checksum: 1410cc255d24a1d83b7ed644834ad27458da272c37bf5732c954aaa02fa8fc41b96abeca25903af95b139b353fb8738d68259ad771ef1d1dbde166b7c0514135
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query-devtools@npm:^4.8.0":
+  version: 4.8.0
+  resolution: "@tanstack/react-query-devtools@npm:4.8.0"
   dependencies:
-    "@tanstack/query-core": 4.3.1
+    "@tanstack/match-sorter-utils": ^8.1.1
+    use-sync-external-store: ^1.2.0
+  peerDependencies:
+    "@tanstack/react-query": 4.8.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 536c5d7184ea545a901c01948b77f874cd8a6505656c156e053da344ed46d987de98ba007518fbdb69d9a0dfac43a40b0f4bc711514861715c03a7cde64fe8b8
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^4.8.0":
+  version: 4.8.0
+  resolution: "@tanstack/react-query@npm:4.8.0"
+  dependencies:
+    "@tanstack/query-core": 4.8.0
     use-sync-external-store: ^1.2.0
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -5342,7 +5365,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 11c707e1ab77e5d41a7e95ec2ad0fd0bf025346c151ca6dbacb13177d188a96147671d7d54b771d1a103feeb2f08b5ba9b65d04344cca457b0f954acda84e68b
+  checksum: e2075ae91760d3a81774d5f405d30074c20811e35439828c5f6e3bb4426c554a1cbe332d095ad4d45bd699a48af94412178f331ddcbb210f4b0c2d346e41ae00
   languageName: node
   linkType: hard
 
@@ -11144,13 +11167,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hamt_plus@npm:1.0.2":
-  version: 1.0.2
-  resolution: "hamt_plus@npm:1.0.2"
-  checksum: af26ea32db03009019cc83dfa9411521a2fa16079443de1a502c9be46d8b3c975acda8ed93fc5750ef08d3186d35901e2d8cfe717dd54bea67b358601fa74e4c
-  languageName: node
-  linkType: hard
-
 "handlebars@npm:^4.7.7":
   version: 4.7.7
   resolution: "handlebars@npm:4.7.7"
@@ -12499,6 +12515,43 @@ __metadata:
     merge-stream: ^2.0.0
     supports-color: ^7.0.0
   checksum: f9afa3b88e3f12027901e4964ba3ff048285b5783b5225cab28fac25b4058cea8ad54001e9a1577ee2bed125fac3ccf5c80dc507b120300cc1bbcb368796533e
+  languageName: node
+  linkType: hard
+
+"jotai@npm:^1.8.4":
+  version: 1.8.4
+  resolution: "jotai@npm:1.8.4"
+  peerDependencies:
+    "@babel/core": "*"
+    "@babel/template": "*"
+    "@tanstack/query-core": "*"
+    "@urql/core": "*"
+    immer: "*"
+    optics-ts: "*"
+    react: ">=16.8"
+    valtio: "*"
+    wonka: "*"
+    xstate: "*"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@babel/template":
+      optional: true
+    "@tanstack/query-core":
+      optional: true
+    "@urql/core":
+      optional: true
+    immer:
+      optional: true
+    optics-ts:
+      optional: true
+    valtio:
+      optional: true
+    wonka:
+      optional: true
+    xstate:
+      optional: true
+  checksum: a3e9ffe9d1dad088bc965702fb2ae6f14162282d950bcb149f423ca7e8738466892b8b8652b65dda11d26e481056105170b961e4b19caa34400c3402d4e16157
   languageName: node
   linkType: hard
 
@@ -14645,7 +14698,8 @@ __metadata:
     "@storybook/react": ^6.4.22
     "@storybook/testing-library": ^0.0.11
     "@svgr/webpack": ^6.3.1
-    "@tanstack/react-query": ^4.3.1
+    "@tanstack/react-query": ^4.8.0
+    "@tanstack/react-query-devtools": ^4.8.0
     "@types/node": 17.0.23
     "@types/react": 17.0.43
     "@types/react-dom": 17.0.14
@@ -14668,13 +14722,13 @@ __metadata:
     eslint-plugin-storybook: ^0.5.11
     eslint-plugin-typescript-sort-keys: ^2.1.0
     husky: ^8.0.0
+    jotai: ^1.8.4
     lint-staged: ^13.0.3
     next: 12.1.1
     prettier: ^2.7.1
     react: 17.0.2
     react-dom: 17.0.2
-    react-kakao-maps-sdk: ^1.1.3
-    recoil: ^0.7.2
+    react-kakao-maps-sdk: ^1.1.4
     tsconfig-paths-webpack-plugin: ^4.0.0
     typescript: 4.6.3
   languageName: unknown
@@ -15425,15 +15479,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-kakao-maps-sdk@npm:^1.1.3":
-  version: 1.1.3
-  resolution: "react-kakao-maps-sdk@npm:1.1.3"
+"react-kakao-maps-sdk@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "react-kakao-maps-sdk@npm:1.1.4"
   dependencies:
     kakao.maps.d.ts: ^0.1.33
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: b8bcdb561b01bd9bb1e92c340a8d0067e826ad0269a5a148684f6751c9d6e06b413e7c47455bc657ecd4e882d704568af331ab96715073a79a99a7b69b6625f5
+  checksum: 1dcc98131da4415f33418e2e2ebbaae1aa82bc3221080c30990fa9cdac8d867dd682aa0e6ae3104fc3a41a60c61930df8c2ebfeba6500ba321ad006c1505e866
   languageName: node
   linkType: hard
 
@@ -15619,22 +15673,6 @@ __metadata:
   dependencies:
     picomatch: ^2.2.1
   checksum: 1ced032e6e45670b6d7352d71d21ce7edf7b9b928494dcaba6f11fba63180d9da6cd7061ebc34175ffda6ff529f481818c962952004d273178acd70f7059b320
-  languageName: node
-  linkType: hard
-
-"recoil@npm:^0.7.2":
-  version: 0.7.2
-  resolution: "recoil@npm:0.7.2"
-  dependencies:
-    hamt_plus: 1.0.2
-  peerDependencies:
-    react: ">=16.13.1"
-  peerDependenciesMeta:
-    react-dom:
-      optional: true
-    react-native:
-      optional: true
-  checksum: 2ad0c2052fd33ee358e3b448fd36ea6d4b37e69ace65ff44124605171c4794e4f167215209731aac3d45d42ea9f4c67e9c5a0704ff04ab94b64bcca96d5f59a3
   languageName: node
   linkType: hard
 
@@ -15856,6 +15894,13 @@ __metadata:
   dependencies:
     mdast-squeeze-paragraphs: ^4.0.0
   checksum: 2071eb74d0ecfefb152c4932690a9fd950c3f9f798a676f1378a16db051da68fb20bf288688cc153ba5019dded35408ff45a31dfe9686eaa7a9f1df9edbb6c81
+  languageName: node
+  linkType: hard
+
+"remove-accents@npm:0.4.2":
+  version: 0.4.2
+  resolution: "remove-accents@npm:0.4.2"
+  checksum: 84a6988555dea24115e2d1954db99509588d43fe55a1590f0b5894802776f7b488b3151c37ceb9e4f4b646f26b80b7325dcea2fae58bc3865df146e1fa606711
   languageName: node
   linkType: hard
 

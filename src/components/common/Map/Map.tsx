@@ -1,25 +1,25 @@
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
 interface MapComponentProps {
-  lattitude: number;
+  latitude: number;
   level?: number;
   longitude: number;
 }
 
 export function MapComponent({
-  lattitude = 33.5563,
+  latitude = 33.5563,
   level = 3,
   longitude = 126.79581,
 }: MapComponentProps) {
   return (
     <>
       <Map
-        center={{ lat: lattitude, lng: longitude }}
+        center={{ lat: latitude, lng: longitude }}
         id="map"
         level={level}
-        style={{ height: "360px", width: "100%" }}>
+        style={{ height: "100%", width: "100%" }}>
         <MapMarker
-          position={{ lat: lattitude, lng: longitude }}
+          position={{ lat: latitude, lng: longitude }}
           image={{
             size: {
               height: 66,
