@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 
+import { CSS } from "@stitches/react";
 import { VoidFunction } from "@types";
 
 import { Tag, TagListContainer } from "./styles";
@@ -7,10 +8,12 @@ import { Tag, TagListContainer } from "./styles";
 export function TagList<T extends { key: string; name: string }>({
   activeTagKey,
   onClickTag,
+  tagCss,
   tagList,
 }: {
   activeTagKey: T["key"];
   onClickTag: VoidFunction<T>;
+  tagCss?: CSS;
   tagList: T[];
 }) {
   const onClickTagHandler = useCallback(
@@ -27,8 +30,9 @@ export function TagList<T extends { key: string; name: string }>({
           key={tag.key}
           active={activeTagKey === tag.key}
           as="li"
+          css={tagCss}
           role="button"
-          onClick={onClickTagHandler}>
+          onClick={() => onClickTagHandler(tag)}>
           {tag.name}
         </Tag>
       ))}
