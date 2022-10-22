@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# lighthouse
+.lighthouseci
+lhci_reports
+
 # testing
 /coverage
 
