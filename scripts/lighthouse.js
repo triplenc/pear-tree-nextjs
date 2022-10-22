@@ -104,7 +104,7 @@ module.exports = () => {
     `| --- | --- |`,
     ...AUDITS.map((audit) => {
       const { displayValue, metric, value } = reducedResult.audits[audit];
-      return createAuditsInfo(`${displayValue} ${metric ?? ""}`, value, audit);
+      return createAuditsInfo(`${displayValue} ${metric || ""}`, value, audit);
     }),
   ].join("\n");
 
