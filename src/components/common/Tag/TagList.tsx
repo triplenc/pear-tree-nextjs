@@ -17,7 +17,7 @@ export function TagList<T extends { key: string; name: string }>({
   tagList: T[];
 }) {
   const onClickTagHandler = useCallback(
-    (tag) => {
+    (tag: T) => {
       onClickTag(tag);
     },
     [onClickTag],
