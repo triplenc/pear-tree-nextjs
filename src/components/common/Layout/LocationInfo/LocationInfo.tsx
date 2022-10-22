@@ -12,6 +12,9 @@ export function LocationInfo({ color }: { color: "white" | "black" }) {
   const { userLocationAsString } = useUserLocation();
 
   const onClickLocationConfig = useCallback(() => {
+    /**
+     * ? 사용자 위치 설정 페이지로 이동?
+     */
     console.info("on click location config");
   }, []);
 

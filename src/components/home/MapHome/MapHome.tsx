@@ -1,3 +1,6 @@
+import { MouseEvent } from "react";
+
+import Link from "next/link";
 import { useUserLocation } from "src/hooks/useUserLocation";
 
 import { Subtitle1 } from "@components/common";
@@ -26,9 +29,16 @@ export function MapHome() {
   return (
     <MapHomeContainer>
       <Subtitle1>내 주변 파티를 찾아봐요 👀</Subtitle1>
-      <MapHomeWrapper>
-        <MapComponent latitude={latitude} longitude={longitude} />
-      </MapHomeWrapper>
+      <Link passHref href={"/map"}>
+        <MapHomeWrapper>
+          <MapComponent
+            draggable={false}
+            latitude={latitude}
+            longitude={longitude}
+            zoomable={false}
+          />
+        </MapHomeWrapper>
+      </Link>
     </MapHomeContainer>
   );
 }
