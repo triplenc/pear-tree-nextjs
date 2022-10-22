@@ -27,37 +27,38 @@ module.exports = () => {
   const createAuditsInfo = (displayValue, value, field) => {
     return `| ${score(value)} ${field} | ${displayValue} |`;
   };
-
   const results = JSON.parse(fs.readFileSync("./lhci_reports/manifest.json"));
 
   const reducedResult = results.reduce(
-    (reducedResult, currentResult) => {
+    (prevResult, currentResult) => {
       const { jsonPath, summary } = currentResult;
       const details = JSON.parse(fs.readFileSync(jsonPath));
       const { audits } = details;
       AUDITS.forEach((audit) => {
-        if (!reducedResult.audits[audit])
-          reducedResult.audits[audit] = { displayValue: 0, value: 0 };
+        if (!prevResult.audits[audit])
+          prevResult.audits[audit] = { displayValue: 0, value: 0 };
 
-        reducedResult.audits[audit].displayValue += Number(
-          audits[audit].displayValue,
-        );
+        const [float, metric] = audits[audit].displayValue.split(" ");
+        prevResult.audits[audit].displayValue += parseFloat(float);
+        prevResult.audits[audit].metric = metric;
 
-        reducedResult.audits[audit].value += formatResult(
+        prevResult.audits[audit].value += formatResult(
           Number(audits[audit].score),
         );
       });
 
       SUMMARY_FIELDS.forEach((summaryField) => {
-        if (!reducedResult.summary[summaryField])
-          reducedResult.summary[summaryField] = { value: 0 };
+        if (!prevResult.summary[summaryField])
+          prevResult.summary[summaryField] = { value: 0 };
 
-        reducedResult.summary[summaryField] += formatResult(
+        prevResult.summary[summaryField].value += formatResult(
           Number(summary[summaryField]),
         );
       });
 
-      reducedResult.totalRunCount += 1;
+      prevResult.totalRunCount += 1;
+
+      return prevResult;
     },
     { audits: {}, summary: {}, totalRunCount: 0 },
   );
@@ -65,12 +66,16 @@ module.exports = () => {
   Object.keys(reducedResult).forEach((key) => {
     if (key === "audits") {
       Object.keys(reducedResult[key]).forEach((field) => {
-        reducedResult[key][field].displayValue = Math.floor(
-          reducedResult[key][field].displayValue / reducedResult.totalRunCount,
-        );
-        reducedResult[key][field].value = Math.floor(
-          reducedResult[key][field].value / reducedResult.totalRunCount,
-        );
+        reducedResult[key][field].displayValue =
+          Math.round(
+            (reducedResult[key][field].displayValue * 100) /
+              reducedResult.totalRunCount,
+          ) / 100;
+        reducedResult[key][field].value =
+          Math.round(
+            (reducedResult[key][field].value * 100) /
+              reducedResult.totalRunCount,
+          ) / 100;
       });
     }
 
@@ -98,8 +103,8 @@ module.exports = () => {
     `| Category | Score |`,
     `| --- | --- |`,
     ...AUDITS.map((audit) => {
-      const { displayValue, value } = reducedResult.audits[audit];
-      return createAuditsInfo(displayValue, value, audit);
+      const { displayValue, metric, value } = reducedResult.audits[audit];
+      return createAuditsInfo(`${displayValue} ${metric ?? ""}`, value, audit);
     }),
   ].join("\n");
 
