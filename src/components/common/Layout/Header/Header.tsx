@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 import { HeaderConfig, LayoutProps } from "../interfaces";
 import { MemoLocationSearchHeader } from "../LocationSearchHeader";
 import { MemoNavigationHeader } from "../NavigationHeader";
@@ -20,3 +22,5 @@ export function Header({
     </HeaderContainer>
   );
 }
+
+export const MemoHeader = memo(Header);
