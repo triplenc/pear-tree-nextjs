@@ -5,4 +5,5 @@ export * from "./Flex";
 export * from "./Image";
 export * from "./Input";
 export * from "./Layout";
+export * from "./Tag";
 export * from "./Typography";
