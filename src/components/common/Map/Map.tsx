@@ -8,6 +8,9 @@ interface MapComponentProps {
   zoomable?: boolean;
 }
 
+/**
+ * TODO : props에 따라  Static Map or Dynamic Map 구분 진행 필요
+ */
 export function MapComponent({
   draggable = true,
   latitude = 33.5563,
