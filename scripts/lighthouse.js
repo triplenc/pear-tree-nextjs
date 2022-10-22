@@ -1,43 +1,107 @@
 module.exports = () => {
   const fs = require("fs");
 
+  const SUMMARY_FIELDS = [
+    "performance",
+    "accessibility",
+    "best-practices",
+    "seo",
+  ];
+
+  const AUDITS = [
+    "first-contentful-paint",
+    "largest-contentful-paint",
+    "total-blocking-time",
+    "cumulative-layout-shift",
+    "interactive",
+  ];
+
+  const score = (res) => (res >= 90 ? "🟢" : res >= 50 ? "🟠" : "🔴");
+
+  const formatResult = (result) => result * 100;
+
+  const createSummaryInfo = (value, field) => {
+    return `| ${score(value)} ${field} | ${value} |`;
+  };
+
+  const createAuditsInfo = (displayValue, value, field) => {
+    return `| ${score(value)} ${field} | ${displayValue} |`;
+  };
+
   const results = JSON.parse(fs.readFileSync("./lhci_reports/manifest.json"));
-  let comments = "";
-  results.forEach((result) => {
-    const { jsonPath, summary } = result;
-    const details = JSON.parse(fs.readFileSync(jsonPath));
-    const { audits } = details;
-    const score = (res) => (res >= 90 ? "🟢" : res >= 50 ? "🟠" : "🔴");
-    const formatResult = (result) => result * 100;
-    const createSummaryInfo = (field) => {
-      const value = formatResult(summary[field]);
-      return `| ${score(value)} ${field} | ${value} |`;
-    };
-    const createAuditsInfo = (field) => {
-      const target = audits[field];
-      const value = formatResult(target.score);
-      return `| ${score(value)} ${field} | ${target.displayValue} |`;
-    };
-    const comment = [
-      `⚡️ Lighthouse report!`,
-      `| Category | Score |`,
-      `| --- | --- |`,
-      createSummaryInfo("performance"),
-      createSummaryInfo("accessibility"),
-      createSummaryInfo("best-practices"),
-      createSummaryInfo("seo"),
-    ].join("\n");
-    const detail = [
-      `| Category | Score |`,
-      `| --- | --- |`,
-      createAuditsInfo("first-contentful-paint"),
-      createAuditsInfo("largest-contentful-paint"),
-      createAuditsInfo("total-blocking-time"),
-      createAuditsInfo("cumulative-layout-shift"),
-      createAuditsInfo("interactive"),
-    ].join("\n");
-    comments += `${comment}\n\n${detail}\n\n`;
+
+  const reducedResult = results.reduce(
+    (reducedResult, currentResult) => {
+      const { jsonPath, summary } = currentResult;
+      const details = JSON.parse(fs.readFileSync(jsonPath));
+      const { audits } = details;
+      AUDITS.forEach((audit) => {
+        if (!reducedResult.audits[audit])
+          reducedResult.audits[audit] = { displayValue: 0, value: 0 };
+
+        reducedResult.audits[audit].displayValue += Number(
+          audits[audit].displayValue,
+        );
+
+        reducedResult.audits[audit].value += formatResult(
+          Number(audits[audit].score),
+        );
+      });
+
+      SUMMARY_FIELDS.forEach((summaryField) => {
+        if (!reducedResult.summary[summaryField])
+          reducedResult.summary[summaryField] = { value: 0 };
+
+        reducedResult.summary[summaryField] += formatResult(
+          Number(summary[summaryField]),
+        );
+      });
+
+      reducedResult.totalRunCount += 1;
+    },
+    { audits: {}, summary: {}, totalRunCount: 0 },
+  );
+
+  Object.keys(reducedResult).forEach((key) => {
+    if (key === "audits") {
+      Object.keys(reducedResult[key]).forEach((field) => {
+        reducedResult[key][field].displayValue = Math.floor(
+          reducedResult[key][field].displayValue / reducedResult.totalRunCount,
+        );
+        reducedResult[key][field].value = Math.floor(
+          reducedResult[key][field].value / reducedResult.totalRunCount,
+        );
+      });
+    }
+
+    if (key === "summary") {
+      Object.keys(reducedResult[key]).forEach((field) => {
+        reducedResult[key][field].value = Math.floor(
+          reducedResult[key][field].value / reducedResult.totalRunCount,
+        );
+      });
+    }
   });
 
-  return comments;
+  const comment = [
+    `⚡️ Lighthouse report!`,
+    `| Category | Score |`,
+    `| --- | --- |`,
+    ...SUMMARY_FIELDS.map((summaryField) => {
+      return createSummaryInfo(
+        reducedResult.summary[summaryField].value,
+        summaryField,
+      );
+    }),
+  ].join("\n");
+  const detail = [
+    `| Category | Score |`,
+    `| --- | --- |`,
+    ...AUDITS.map((audit) => {
+      const { displayValue, value } = reducedResult.audits[audit];
+      return createAuditsInfo(displayValue, value, audit);
+    }),
+  ].join("\n");
+
+  return `${comment}\n\n${detail}\n\n`;
 };
