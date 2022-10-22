@@ -31,7 +31,6 @@ export function TagList<T extends { key: string; name: string }>({
           active={activeTagKey === tag.key}
           as="li"
           css={tagCss}
-          role="button"
           onClick={() => onClickTagHandler(tag)}>
           {tag.name}
         </Tag>
