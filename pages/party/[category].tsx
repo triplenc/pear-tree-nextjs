@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import { CATEGORY } from "src/constants";
 
 import { Layout } from "@components/common";
-import { CategoryBar } from "@components/party";
+import { CategoryBar, PlatformTagList } from "@components/party";
 
 const PartyList: NextPage = () => {
   const router = useRouter();
@@ -24,6 +24,7 @@ const PartyList: NextPage = () => {
       </Head>
       <Layout headerConfig={headerConfig} isShowBottomNavigation={false}>
         <CategoryBar />
+        <PlatformTagList />
       </Layout>
     </>
   );
