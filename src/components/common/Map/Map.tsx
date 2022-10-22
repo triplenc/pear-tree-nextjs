@@ -1,6 +1,4 @@
-import { Map, MapMarker, ZoomControl } from "react-kakao-maps-sdk";
-
-import MyLocation from "@icons/map-my-location.svg";
+import { Map, MapMarker } from "react-kakao-maps-sdk";
 
 interface MapComponentProps {
   lattitude: number;
@@ -13,8 +11,6 @@ export function MapComponent({
   level = 3,
   longitude = 126.79581,
 }: MapComponentProps) {
-  //TODO 위치 및 지도 크기 상태관리 필요 props? jotai?
-
   return (
     <>
       <Map
