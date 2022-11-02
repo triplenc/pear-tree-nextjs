@@ -1,13 +1,8 @@
 import { memo } from "react";
 
-import { MemoBottomNavigationButton } from "./BottomNavigationButton";
+import { MemoBottomNavigationButton } from "./components";
+import { NavigationInfo } from "./interfaces";
 import { BottomNavigationContainer } from "./styles";
-
-export interface NavigationInfo {
-  icon: "home" | "chatBubble" | "user";
-  link: "/" | "/chat/list" | "/my-page";
-  title: "홈" | "채팅" | "My";
-}
 
 const BOTTOM_NAVIGATION_INFO: NavigationInfo[] = [
   { icon: "home", link: "/", title: "홈" },

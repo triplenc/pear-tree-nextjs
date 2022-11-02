@@ -56,6 +56,7 @@ const space = {
   "26": "2.6rem",
   "28": "2.8rem",
   "30": "3rem",
+  "34": "3.4rem",
 
   mobileMax: "45rem",
   locationSearchHeaderHeight: "10rem",
@@ -80,6 +81,7 @@ export const {
     space,
     sizes: space,
     radii: space,
+    borderWidths: space,
   },
   utils: {
     m: (value: PropertyValue<"margin">) => ({

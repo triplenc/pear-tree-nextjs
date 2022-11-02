@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Category } from "../interfaces";
+import { Category } from "@types";
 
 // TODO: icon 순서 및 image url, path, name 백엔드 이관
 export const useCategoryList = () => {

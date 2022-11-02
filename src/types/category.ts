@@ -25,3 +25,9 @@ export type CategoryName =
   | "찜/탕"
   | "카페/디저트"
   | "샐러드";
+
+export interface Category {
+  image: string;
+  name: CategoryName;
+  path: CategoryKey;
+}

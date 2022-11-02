@@ -3,8 +3,7 @@ import Link from "next/link";
 
 import { Caption } from "@components/common";
 import { flexColumnCreator, styled } from "@styles";
-
-import { Category } from "../interfaces";
+import { Category } from "@types";
 
 const CategoryLink = styled("a", {
   ...flexColumnCreator("center", "center", "$2"),
