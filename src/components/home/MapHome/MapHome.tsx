@@ -1,5 +1,3 @@
-import { MouseEvent } from "react";
-
 import Link from "next/link";
 import { useUserLocation } from "src/hooks/useUserLocation";
 
@@ -32,10 +30,9 @@ export function MapHome() {
       <Link passHref href={"/map"}>
         <MapHomeWrapper>
           <MapComponent
-            draggable={false}
+            isStatic={true}
             latitude={latitude}
             longitude={longitude}
-            zoomable={false}
           />
         </MapHomeWrapper>
       </Link>
